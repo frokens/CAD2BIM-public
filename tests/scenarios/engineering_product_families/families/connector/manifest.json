@@ -1,0 +1,64 @@
+{
+  "category": "CONNECTOR",
+  "family": {
+    "definition_path": "families/connector/definition.json",
+    "source_files": [
+      {
+        "repo_path": "families/connector/program/main.py",
+        "bundle_path": "main.py"
+      },
+      {
+        "repo_path": "shared/finite_two_port_solver.py",
+        "bundle_path": "shared_solver.py"
+      },
+      {
+        "repo_path": "shared/local_geometry_frame.py",
+        "bundle_path": "local_geometry_frame.py"
+      }
+    ],
+    "preview_cases_path": "families/connector/preview_cases.json",
+    "usage_path": "families/connector/usage.md"
+  },
+  "geometry_bindings": [
+    {
+      "binding_key": "connector_body_geometry",
+      "resource_kind": "modeling_function",
+      "geometry_purpose": "product_component",
+      "source_files": [
+        {
+          "repo_path": "geometry/connector_body/main.py",
+          "bundle_path": "main.py"
+        },
+        {
+          "repo_path": "geometry/connector_body/interfaces.py",
+          "bundle_path": "interfaces.py"
+        },
+        {
+          "repo_path": "geometry/connector_body/parameters.py",
+          "bundle_path": "parameters.py"
+        }
+      ],
+      "parameter_schema_path": "geometry/connector_body/parameter_schema.json",
+      "validation_samples_path": "geometry/connector_body/validation_samples.json",
+      "usage_path": "geometry/connector_body/usage.md"
+    },
+    {
+      "binding_key": "sphere_geometry",
+      "resource_kind": "modeling_function",
+      "geometry_purpose": "product_component",
+      "source_files": [
+        {
+          "repo_path": "geometry/connection_sphere/main.py",
+          "bundle_path": "main.py"
+        },
+        {
+          "repo_path": "geometry/connection_sphere/interfaces.py",
+          "bundle_path": "interfaces.py"
+        }
+      ],
+      "parameter_schema_path": "geometry/connection_sphere/parameter_schema.json",
+      "validation_samples_path": "geometry/connection_sphere/validation_samples.json",
+      "usage_path": "geometry/connection_sphere/usage.md"
+    }
+  ]
+}

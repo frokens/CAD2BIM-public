@@ -1,0 +1,192 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "ports",
+    "shape"
+  ],
+  "properties": {
+    "ports": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "side_a",
+        "side_b"
+      ],
+      "properties": {
+        "side_a": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "origin_m",
+            "axis",
+            "reference_direction",
+            "outer_diameter_m"
+          ],
+          "properties": {
+            "origin_m": {
+              "type": "array",
+              "minItems": 3,
+              "maxItems": 3,
+              "items": {
+                "type": "number"
+              }
+            },
+            "axis": {
+              "type": "array",
+              "minItems": 3,
+              "maxItems": 3,
+              "items": {
+                "type": "number"
+              }
+            },
+            "reference_direction": {
+              "type": "array",
+              "minItems": 3,
+              "maxItems": 3,
+              "items": {
+                "type": "number"
+              }
+            },
+            "outer_diameter_m": {
+              "type": "number",
+              "exclusiveMinimum": 0
+            }
+          }
+        },
+        "side_b": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "origin_m",
+            "axis",
+            "reference_direction",
+            "outer_diameter_m"
+          ],
+          "properties": {
+            "origin_m": {
+              "type": "array",
+              "minItems": 3,
+              "maxItems": 3,
+              "items": {
+                "type": "number"
+              }
+            },
+            "axis": {
+              "type": "array",
+              "minItems": 3,
+              "maxItems": 3,
+              "items": {
+                "type": "number"
+              }
+            },
+            "reference_direction": {
+              "type": "array",
+              "minItems": 3,
+              "maxItems": 3,
+              "items": {
+                "type": "number"
+              }
+            },
+            "outer_diameter_m": {
+              "type": "number",
+              "exclusiveMinimum": 0
+            }
+          }
+        }
+      }
+    },
+    "shape": {
+      "anyOf": [
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "mode",
+            "frame_x",
+            "body_outer_diameter_m",
+            "sleeve_length_m"
+          ],
+          "properties": {
+            "mode": {
+              "type": "string",
+              "enum": [
+                "straight"
+              ]
+            },
+            "frame_x": {
+              "type": "array",
+              "minItems": 3,
+              "maxItems": 3,
+              "items": {
+                "type": "number"
+              }
+            },
+            "body_outer_diameter_m": {
+              "type": "number",
+              "exclusiveMinimum": 0
+            },
+            "sleeve_length_m": {
+              "type": "number",
+              "exclusiveMinimum": 0
+            }
+          }
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "mode",
+            "frame_x",
+            "local_center_m",
+            "body_outer_diameter_m",
+            "turn_radian",
+            "bend_scale_m",
+            "arc_radius_m"
+          ],
+          "properties": {
+            "mode": {
+              "type": "string",
+              "enum": [
+                "curved"
+              ]
+            },
+            "frame_x": {
+              "type": "array",
+              "minItems": 3,
+              "maxItems": 3,
+              "items": {
+                "type": "number"
+              }
+            },
+            "local_center_m": {
+              "type": "array",
+              "minItems": 3,
+              "maxItems": 3,
+              "items": {
+                "type": "number"
+              }
+            },
+            "body_outer_diameter_m": {
+              "type": "number",
+              "exclusiveMinimum": 0
+            },
+            "turn_radian": {
+              "type": "number",
+              "exclusiveMinimum": 0,
+              "maximum": 2.6179938779914944
+            },
+            "bend_scale_m": {
+              "type": "number",
+              "exclusiveMinimum": 0
+            },
+            "arc_radius_m": {
+              "type": "number",
+              "exclusiveMinimum": 0
+            }
+          }
+        }
+      ]
+    }
+  }
+}

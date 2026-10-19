@@ -1,0 +1,223 @@
+[
+  {
+    "ports": {
+      "side_a": {
+        "origin_m": [
+          -0.30800000000000005,
+          0,
+          0
+        ],
+        "axis": [
+          -1,
+          0,
+          0
+        ],
+        "reference_direction": [
+          0,
+          0,
+          1
+        ],
+        "outer_diameter_m": 0.2
+      },
+      "side_b": {
+        "origin_m": [
+          0,
+          0,
+          0
+        ],
+        "axis": [
+          1,
+          0,
+          0
+        ],
+        "reference_direction": [
+          0,
+          0,
+          1
+        ],
+        "outer_diameter_m": 0.08
+      }
+    },
+    "shape": {
+      "mode": "straight",
+      "frame_x": [
+        0,
+        0,
+        1
+      ],
+      "body_outer_diameter_m": 0.24,
+      "sleeve_length_m": 0.30800000000000005
+    }
+  },
+  {
+    "ports": {
+      "side_a": {
+        "origin_m": [
+          -7.116651917306316,
+          -2,
+          -1
+        ],
+        "axis": [
+          -1,
+          0,
+          0
+        ],
+        "reference_direction": [
+          0,
+          0,
+          1
+        ],
+        "outer_diameter_m": 0.15
+      },
+      "side_b": {
+        "origin_m": [
+          -6.850370875405545,
+          -1.9973882139150514,
+          -1
+        ],
+        "axis": [
+          0.9998476951563912,
+          0.01745240643728352,
+          0
+        ],
+        "reference_direction": [
+          0,
+          0,
+          1
+        ],
+        "outer_diameter_m": 0.1
+      }
+    },
+    "shape": {
+      "mode": "curved",
+      "frame_x": [
+        0,
+        0,
+        1
+      ],
+      "body_outer_diameter_m": 0.165,
+      "local_center_m": [
+        -7,
+        -2,
+        -1
+      ],
+      "turn_radian": 0.017453292519943302,
+      "bend_scale_m": 0.03415191730631626,
+      "arc_radius_m": 3.5220798931127275
+    }
+  },
+  {
+    "ports": {
+      "side_a": {
+        "origin_m": [
+          -0.24615338450530064,
+          0,
+          0
+        ],
+        "axis": [
+          -1,
+          0,
+          0
+        ],
+        "reference_direction": [
+          0,
+          0,
+          1
+        ],
+        "outer_diameter_m": 0.2
+      },
+      "side_b": {
+        "origin_m": [
+          0.159743358919317,
+          0.276683613819968,
+          0
+        ],
+        "axis": [
+          0.5000000000000001,
+          0.8660254037844385,
+          0
+        ],
+        "reference_direction": [
+          0,
+          0,
+          1
+        ],
+        "outer_diameter_m": 0.1
+      }
+    },
+    "shape": {
+      "mode": "curved",
+      "frame_x": [
+        0,
+        0,
+        1
+      ],
+      "body_outer_diameter_m": 0.22000000000000003,
+      "local_center_m": [
+        0,
+        0,
+        0
+      ],
+      "turn_radian": 1.0471975511965976,
+      "bend_scale_m": 0.13615338450530062,
+      "arc_radius_m": 0.21224212162707767
+    }
+  },
+  {
+    "ports": {
+      "side_a": {
+        "origin_m": [
+          -0.2758868060151516,
+          0,
+          0
+        ],
+        "axis": [
+          -1,
+          0,
+          0
+        ],
+        "reference_direction": [
+          0,
+          0,
+          1
+        ],
+        "outer_diameter_m": 0.3
+      },
+      "side_b": {
+        "origin_m": [
+          0.2600888293546993,
+          0.0920180991878446,
+          0
+        ],
+        "axis": [
+          0.9427374694403302,
+          0.33353570080763845,
+          0
+        ],
+        "reference_direction": [
+          0,
+          0,
+          1
+        ],
+        "outer_diameter_m": 0.3
+      }
+    },
+    "shape": {
+      "mode": "curved",
+      "frame_x": [
+        0,
+        0,
+        1
+      ],
+      "body_outer_diameter_m": 0.33,
+      "local_center_m": [
+        0,
+        0,
+        0
+      ],
+      "turn_radian": 0.34005156072084497,
+      "bend_scale_m": 0.11088680601515155,
+      "arc_radius_m": 0.5812917692214151
+    }
+  }
+]

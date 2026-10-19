@@ -1,0 +1,12 @@
+{
+  "source": "08_valve/final/template_repaired.ifc",
+  "source_sha256": "186fae3f09397fc660df3133fa5837c56d9bac2ae3ab68ba611356ef04f7f08b",
+  "canonical_source_brep_path": "tmp/family-target-rebuild-20260923/execution/valve-first-batch/upper-proof/diagnostic_original_edge_filling_1um.brep",
+  "canonical_source_brep_sha256": "c5619c9d183ec9a90d3d0f38b1bb26811a0b23f5f21c2403449294d50dd8dd32",
+  "canonical_source_brep_bytes": 104798,
+  "solid_count": 12,
+  "face_count": 64,
+  "source_preserving_repair": "Two original-edge Filling faces close the formerly open upper and lower stem shells; all other source solids remain represented.",
+  "mating_limit": "The Filling faces approximate a nominal X-axis R=0.165 m saddle; appearance assembly does not certify full-area contact or a manufactured mating surface.",
+  "source_lower_middle_outer_diameter_m": 0.33
+}

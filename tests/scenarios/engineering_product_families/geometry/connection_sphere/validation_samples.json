@@ -1,0 +1,91 @@
+[
+  {
+    "diameter_m": 0.2,
+    "interfaces": [
+      {
+        "kind": "datum",
+        "key": "host_datum",
+        "origin_m": [
+          0,
+          0,
+          0
+        ],
+        "axis": [
+          0,
+          0,
+          1
+        ],
+        "reference_direction": [
+          1,
+          0,
+          0
+        ]
+      },
+      {
+        "kind": "circular",
+        "key": "gas_branch",
+        "origin_m": [
+          0,
+          0,
+          0.3
+        ],
+        "axis": [
+          0,
+          0,
+          1
+        ],
+        "reference_direction": [
+          1,
+          0,
+          0
+        ],
+        "diameter_m": 0.063
+      }
+    ]
+  },
+  {
+    "diameter_m": 0.3,
+    "interfaces": [
+      {
+        "kind": "circular",
+        "key": "side_a",
+        "origin_m": [
+          0,
+          0,
+          0
+        ],
+        "axis": [
+          -1,
+          0,
+          0
+        ],
+        "reference_direction": [
+          0,
+          0,
+          1
+        ],
+        "diameter_m": 0.3
+      },
+      {
+        "kind": "circular",
+        "key": "side_b",
+        "origin_m": [
+          0,
+          0,
+          0
+        ],
+        "axis": [
+          1,
+          0,
+          0
+        ],
+        "reference_direction": [
+          0,
+          0,
+          1
+        ],
+        "diameter_m": 0.15
+      }
+    ]
+  }
+]

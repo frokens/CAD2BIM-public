@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CAD2BIM · 几何与产品族</title>
+  <script>if (new URLSearchParams(location.search).get("embedded") === "1") document.documentElement.classList.add("is-embedded");</script>
+  <link rel="stylesheet" href="./styles.css?v=20260912-card-sections" />
+  <link rel="stylesheet" href="./library.css?v=20260912-card-sections" />
+<script src="./public-bootstrap.js"></script>
+<script src="./library-data.js"></script>
+</head>
+<body>
+  <div class="app-shell resource-shell">
+    <aside class="sidebar" aria-label="工作区导航">
+      <div class="brand"><span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span><strong>CAD2BIM</strong></div>
+      <a class="new-task" href="/" target="_top"><span aria-hidden="true">＋</span> 返回工作台</a>
+      <nav class="primary-nav" aria-label="主导航">
+        <a class="nav-item" href="/" target="_top"><span aria-hidden="true">◫</span> Agent 工作台</a>
+        <a class="nav-item is-active" href="/library" target="_top"><span aria-hidden="true">◇</span> 几何与产品族</a>
+      </nav>
+      <div class="sidebar-section"><p>最近任务</p><a class="task-row" href="/" target="_top"><span class="task-dot"></span><span><strong>CAD2BIM 工作台</strong><small>返回完整对话</small></span></a></div>
+    </aside>
+    <main class="resource-workspace">
+      <header class="topbar"><div class="topbar-title"><h1>几何与产品族</h1><small class="conversation-preview-label">资源库</small></div><a class="text-button" href="/" target="_top">返回工作台</a></header>
+      <div class="resource-scroll">
+        <p class="resource-origin" id="resourceOrigin"></p>
+        <div class="resource-navigation"><nav class="resource-tabs" aria-label="资源类型"><button type="button" data-kind="family">产品族</button><button type="button" data-kind="geometry">几何</button></nav><button type="button" id="resourceBack" class="resource-back" hidden></button></div>
+        <section id="resourceList" aria-label="资源列表">
+          <div class="resource-intro"><h2 id="resourceKindTitle"></h2><p id="resourceKindDescription"></p></div>
+          <div class="resource-toolbar"><div class="resource-scopes" aria-label="所属范围"><button type="button" data-scope="all">全部</button><button type="button" data-scope="task">任务</button><button type="button" data-scope="tenant">团队共享</button><button type="button" data-scope="system">系统内置</button></div><label class="resource-task" id="resourceTaskLabel" hidden><span>任务</span><select id="resourceTask" aria-label="选择任务"></select></label><label class="resource-search"><span class="sr-only">搜索已载入资源</span><input id="resourceSearch" type="search" placeholder="搜索已载入资源" /></label></div>
+          <div class="resource-grid" id="resourceGrid"></div>
+          <p class="resource-empty" id="resourceEmpty" hidden>当前筛选范围没有资源。</p>
+          <button type="button" class="resource-more" id="resourceMore" hidden>加载更多</button>
+        </section>
+        <p class="resource-load-status" id="resourceStatus" role="status" hidden></p>
+        <button type="button" class="resource-more" id="resourceRetry" hidden>重新读取</button>
+        <section id="resourceDetail" class="resource-detail-page" hidden aria-label="资源详情"></section>
+      </div>
+    </main>
+  </div>
+  <dialog id="resourceSourceDialog" class="resource-source-dialog" aria-labelledby="resourceSourceTitle">
+    <header class="resource-source-heading"><h2 id="resourceSourceTitle"></h2><button type="button" class="resource-source-close" data-source-close aria-label="关闭源码">×</button></header>
+    <div class="resource-source-tools"><label id="resourceSourceFileLabel">文件<select id="resourceSourcePath" aria-label="选择源文件"></select></label><span id="resourceSourceSingleFile"></span></div>
+    <p id="resourceSourceStatus" role="status"></p>
+    <div class="resource-source-code" id="resourceSourceText" tabindex="0" aria-label="只读源码" hidden></div>
+    <footer class="resource-source-pages" id="resourceSourcePages" hidden><button type="button" data-source-page="previous">上一页</button><span id="resourceSourceRange"></span><button type="button" data-source-page="next">下一页</button></footer>
+  </dialog>
+  <dialog class="task-delete-dialog" id="resourceDeleteDialog" aria-labelledby="resourceDeleteTitle" aria-describedby="resourceDeleteDescription resourceDeleteImpact">
+    <header class="task-delete-heading">
+      <span class="task-delete-symbol" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h16M9 7V4h6v3M6 7l1 13h10l1-13M10 11v5M14 11v5"/></svg></span>
+      <button class="icon-button" type="button" data-delete-cancel aria-label="关闭删除确认">×</button>
+    </header>
+    <h2 id="resourceDeleteTitle"></h2>
+    <p class="task-delete-name" id="resourceDeleteName"></p>
+    <p id="resourceDeleteDescription"></p>
+    <p class="task-delete-retained" id="resourceDeleteImpact"></p>
+    <p class="task-delete-error" id="resourceDeleteError" role="alert" hidden></p>
+    <footer class="task-delete-actions">
+      <button class="task-delete-cancel" type="button" data-delete-cancel autofocus>取消</button>
+      <button class="task-delete-confirm" id="resourceDeleteConfirm" type="button" data-delete-confirm>删除资源</button>
+    </footer>
+  </dialog>
+
+
+  <script src="./library-api.js?v=20260912-card-sections"></script>
+  <script src="./library.js?v=20260912-card-sections"></script>
+</body>
+</html>

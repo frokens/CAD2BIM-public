@@ -1,0 +1,904 @@
+{
+  "cases": {
+    "items": [
+      {
+        "case_kind": "family",
+        "case_key": "standard_nominal",
+        "invocation": {
+          "realization_kind": "standard_model",
+          "product_origin": [
+            0,
+            0,
+            0
+          ],
+          "length_unit": {},
+          "public_parameters": {
+            "host_a_m": [
+              -2,
+              0,
+              0
+            ],
+            "host_b_m": [
+              2,
+              0,
+              0
+            ],
+            "host_outer_diameter_m": 0.2
+          }
+        },
+        "expectation": {
+          "expected_status": "SOLVED"
+        }
+      },
+      {
+        "case_kind": "family",
+        "case_key": "standard_placed",
+        "invocation": {
+          "realization_kind": "standard_model",
+          "product_origin": [
+            7,
+            -5,
+            2
+          ],
+          "length_unit": {},
+          "public_parameters": {
+            "host_a_m": [
+              -2,
+              0,
+              0
+            ],
+            "host_b_m": [
+              2,
+              0,
+              0
+            ],
+            "host_outer_diameter_m": 0.2
+          }
+        },
+        "expectation": {
+          "expected_status": "SOLVED"
+        }
+      },
+      {
+        "case_kind": "family",
+        "case_key": "s1_orthogonal",
+        "invocation": {
+          "realization_kind": "self_geometry",
+          "product_origin": [
+            0,
+            0,
+            0
+          ],
+          "length_unit": {},
+          "public_parameters": {
+            "host_a_m": [
+              -2,
+              0,
+              0
+            ],
+            "host_b_m": [
+              2,
+              0,
+              0
+            ],
+            "host_outer_diameter_m": 0.2
+          },
+          "external_constraints": [
+            {
+              "interface_key": "gas_branch",
+              "condition": {
+                "kind": "finite_segment",
+                "start_m": [
+                  0,
+                  0,
+                  0
+                ],
+                "end_m": [
+                  0,
+                  0,
+                  2
+                ],
+                "outer_diameter_m": 0.063,
+                "direction_relation": "same"
+              }
+            }
+          ]
+        },
+        "expectation": {
+          "expected_status": "SOLVED"
+        }
+      },
+      {
+        "case_kind": "family",
+        "case_key": "s2_oblique_placed",
+        "invocation": {
+          "realization_kind": "self_geometry",
+          "product_origin": [
+            8,
+            -1,
+            0
+          ],
+          "length_unit": {},
+          "public_parameters": {
+            "host_a_m": [
+              8,
+              0,
+              0
+            ],
+            "host_b_m": [
+              12,
+              0,
+              0
+            ],
+            "host_outer_diameter_m": 0.2
+          },
+          "external_constraints": [
+            {
+              "interface_key": "gas_branch",
+              "condition": {
+                "kind": "finite_segment",
+                "start_m": [
+                  10,
+                  0,
+                  0
+                ],
+                "end_m": [
+                  11,
+                  0,
+                  1.7320508075688772
+                ],
+                "outer_diameter_m": 0.063,
+                "direction_relation": "same"
+              }
+            }
+          ]
+        },
+        "expectation": {
+          "expected_status": "SOLVED"
+        }
+      },
+      {
+        "case_kind": "family",
+        "case_key": "s1_port_inside_shifted_branch",
+        "invocation": {
+          "realization_kind": "self_geometry",
+          "product_origin": [
+            0,
+            0,
+            0
+          ],
+          "length_unit": {},
+          "public_parameters": {
+            "host_a_m": [
+              -2,
+              0,
+              0
+            ],
+            "host_b_m": [
+              2,
+              0,
+              0
+            ],
+            "host_outer_diameter_m": 0.2
+          },
+          "external_constraints": [
+            {
+              "interface_key": "gas_branch",
+              "condition": {
+                "kind": "finite_segment",
+                "start_m": [
+                  0,
+                  0,
+                  0.2
+                ],
+                "end_m": [
+                  0,
+                  0,
+                  1
+                ],
+                "outer_diameter_m": 0.063,
+                "direction_relation": "same"
+              }
+            }
+          ]
+        },
+        "expectation": {
+          "expected_status": "SOLVED"
+        }
+      },
+      {
+        "case_kind": "family",
+        "case_key": "s1_reversed_retained_equivalent",
+        "invocation": {
+          "realization_kind": "self_geometry",
+          "product_origin": [
+            0,
+            0,
+            0
+          ],
+          "length_unit": {},
+          "public_parameters": {
+            "host_a_m": [
+              -2,
+              0,
+              0
+            ],
+            "host_b_m": [
+              2,
+              0,
+              0
+            ],
+            "host_outer_diameter_m": 0.2
+          },
+          "external_constraints": [
+            {
+              "interface_key": "gas_branch",
+              "condition": {
+                "kind": "finite_segment",
+                "start_m": [
+                  0,
+                  0,
+                  0.2
+                ],
+                "end_m": [
+                  0,
+                  0,
+                  1
+                ],
+                "outer_diameter_m": 0.063,
+                "direction_relation": "same"
+              }
+            }
+          ]
+        },
+        "expectation": {
+          "expected_status": "SOLVED"
+        }
+      },
+      {
+        "case_kind": "family",
+        "case_key": "s1_port_before_branch_segment",
+        "invocation": {
+          "realization_kind": "self_geometry",
+          "product_origin": [
+            0,
+            0,
+            0
+          ],
+          "length_unit": {},
+          "public_parameters": {
+            "host_a_m": [
+              -2,
+              0,
+              0
+            ],
+            "host_b_m": [
+              2,
+              0,
+              0
+            ],
+            "host_outer_diameter_m": 0.2
+          },
+          "external_constraints": [
+            {
+              "interface_key": "gas_branch",
+              "condition": {
+                "kind": "finite_segment",
+                "start_m": [
+                  0,
+                  0,
+                  0.3
+                ],
+                "end_m": [
+                  0,
+                  0,
+                  1
+                ],
+                "outer_diameter_m": 0.063,
+                "direction_relation": "same"
+              }
+            }
+          ]
+        },
+        "expectation": {
+          "expected_status": "SOLVED"
+        }
+      },
+      {
+        "case_kind": "family",
+        "case_key": "s1_port_after_branch_segment",
+        "invocation": {
+          "realization_kind": "self_geometry",
+          "product_origin": [
+            0,
+            0,
+            0
+          ],
+          "length_unit": {},
+          "public_parameters": {
+            "host_a_m": [
+              -2,
+              0,
+              0
+            ],
+            "host_b_m": [
+              2,
+              0,
+              0
+            ],
+            "host_outer_diameter_m": 0.2
+          },
+          "external_constraints": [
+            {
+              "interface_key": "gas_branch",
+              "condition": {
+                "kind": "finite_segment",
+                "start_m": [
+                  0,
+                  0,
+                  0.2
+                ],
+                "end_m": [
+                  0,
+                  0,
+                  0.22
+                ],
+                "outer_diameter_m": 0.063,
+                "direction_relation": "same"
+              }
+            }
+          ]
+        },
+        "expectation": {
+          "expected_status": "SOLVED"
+        }
+      },
+      {
+        "case_kind": "family",
+        "case_key": "host_world_y_frame",
+        "invocation": {
+          "realization_kind": "self_geometry",
+          "product_origin": [
+            0,
+            0,
+            0
+          ],
+          "length_unit": {},
+          "public_parameters": {
+            "host_a_m": [
+              0,
+              -2,
+              0
+            ],
+            "host_b_m": [
+              0,
+              2,
+              0
+            ],
+            "host_outer_diameter_m": 0.2
+          },
+          "external_constraints": [
+            {
+              "interface_key": "gas_branch",
+              "condition": {
+                "kind": "finite_segment",
+                "start_m": [
+                  0,
+                  0,
+                  0
+                ],
+                "end_m": [
+                  1,
+                  0,
+                  1.7320508075688772
+                ],
+                "outer_diameter_m": 0.063,
+                "direction_relation": "same"
+              }
+            }
+          ]
+        },
+        "expectation": {
+          "expected_status": "SOLVED"
+        }
+      },
+      {
+        "case_kind": "family",
+        "case_key": "s3_parallel",
+        "invocation": {
+          "realization_kind": "self_geometry",
+          "product_origin": [
+            0,
+            0,
+            0
+          ],
+          "length_unit": {},
+          "public_parameters": {
+            "host_a_m": [
+              -2,
+              0,
+              0
+            ],
+            "host_b_m": [
+              2,
+              0,
+              0
+            ],
+            "host_outer_diameter_m": 0.2
+          },
+          "external_constraints": [
+            {
+              "interface_key": "gas_branch",
+              "condition": {
+                "kind": "finite_segment",
+                "start_m": [
+                  0,
+                  0,
+                  0
+                ],
+                "end_m": [
+                  2,
+                  0,
+                  0
+                ],
+                "outer_diameter_m": 0.063,
+                "direction_relation": "same"
+              }
+            }
+          ]
+        },
+        "expectation": {
+          "expected_status": "INFEASIBLE",
+          "reason_keys": [
+            "parallel_axis"
+          ]
+        }
+      },
+      {
+        "case_kind": "family",
+        "case_key": "short_host_window",
+        "invocation": {
+          "realization_kind": "self_geometry",
+          "product_origin": [
+            0,
+            0,
+            0
+          ],
+          "length_unit": {},
+          "public_parameters": {
+            "host_a_m": [
+              -0.03,
+              0,
+              0
+            ],
+            "host_b_m": [
+              0.03,
+              0,
+              0
+            ],
+            "host_outer_diameter_m": 0.2
+          },
+          "external_constraints": [
+            {
+              "interface_key": "gas_branch",
+              "condition": {
+                "kind": "finite_segment",
+                "start_m": [
+                  0,
+                  0,
+                  0
+                ],
+                "end_m": [
+                  0,
+                  0,
+                  2
+                ],
+                "outer_diameter_m": 0.063,
+                "direction_relation": "same"
+              }
+            }
+          ]
+        },
+        "expectation": {
+          "expected_status": "SOLVED"
+        }
+      },
+      {
+        "case_kind": "family",
+        "case_key": "near_tangent_finite_fit",
+        "invocation": {
+          "realization_kind": "self_geometry",
+          "product_origin": [
+            0,
+            0,
+            0
+          ],
+          "length_unit": {},
+          "public_parameters": {
+            "host_a_m": [
+              -2,
+              0,
+              0
+            ],
+            "host_b_m": [
+              2,
+              0,
+              0
+            ],
+            "host_outer_diameter_m": 0.2
+          },
+          "external_constraints": [
+            {
+              "interface_key": "gas_branch",
+              "condition": {
+                "kind": "finite_segment",
+                "start_m": [
+                  0,
+                  0,
+                  0
+                ],
+                "end_m": [
+                  2.98496231131986,
+                  0,
+                  0.3
+                ],
+                "outer_diameter_m": 0.063,
+                "direction_relation": "same"
+              }
+            }
+          ]
+        },
+        "expectation": {
+          "expected_status": "SOLVED"
+        }
+      },
+      {
+        "case_kind": "family",
+        "case_key": "near_tangent_no_fit",
+        "invocation": {
+          "realization_kind": "self_geometry",
+          "product_origin": [
+            0,
+            0,
+            0
+          ],
+          "length_unit": {},
+          "public_parameters": {
+            "host_a_m": [
+              -2,
+              0,
+              0
+            ],
+            "host_b_m": [
+              2,
+              0,
+              0
+            ],
+            "host_outer_diameter_m": 0.2
+          },
+          "external_constraints": [
+            {
+              "interface_key": "gas_branch",
+              "condition": {
+                "kind": "finite_segment",
+                "start_m": [
+                  0,
+                  0,
+                  0
+                ],
+                "end_m": [
+                  2.999849996249812,
+                  0,
+                  0.03
+                ],
+                "outer_diameter_m": 0.063,
+                "direction_relation": "same"
+              }
+            }
+          ]
+        },
+        "expectation": {
+          "expected_status": "SOLVED"
+        }
+      },
+      {
+        "case_kind": "family",
+        "case_key": "zero_host_length",
+        "invocation": {
+          "realization_kind": "self_geometry",
+          "product_origin": [
+            0,
+            0,
+            0
+          ],
+          "length_unit": {},
+          "public_parameters": {
+            "host_a_m": [
+              0,
+              0,
+              0
+            ],
+            "host_b_m": [
+              0,
+              0,
+              0
+            ],
+            "host_outer_diameter_m": 0.2
+          },
+          "external_constraints": [
+            {
+              "interface_key": "gas_branch",
+              "condition": {
+                "kind": "finite_segment",
+                "start_m": [
+                  0,
+                  0,
+                  0
+                ],
+                "end_m": [
+                  0,
+                  0,
+                  2
+                ],
+                "outer_diameter_m": 0.063,
+                "direction_relation": "same"
+              }
+            }
+          ]
+        },
+        "expectation": {
+          "expected_status": "INFEASIBLE",
+          "reason_keys": [
+            "source_length"
+          ]
+        }
+      },
+      {
+        "case_kind": "family",
+        "case_key": "host_window_1720c630c2974299dffa19095ab735d2",
+        "invocation": {
+          "realization_kind": "self_geometry",
+          "product_origin": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "length_unit": {},
+          "public_parameters": {
+            "host_a_m": [
+              -3.180279497624724,
+              9.178666177733817,
+              0.0
+            ],
+            "host_b_m": [
+              0.2619204999791691,
+              -0.7559338216045148,
+              0.0
+            ],
+            "host_outer_diameter_m": 0.1
+          },
+          "external_constraints": [
+            {
+              "interface_key": "gas_branch",
+              "condition": {
+                "kind": "finite_segment",
+                "start_m": [
+                  -0.0021795002840008237,
+                  0.00586618070218492,
+                  0.0
+                ],
+                "end_m": [
+                  5.348020500867278,
+                  -14.3943338211933,
+                  0.0
+                ],
+                "outer_diameter_m": 0.05,
+                "direction_relation": "same"
+              }
+            }
+          ]
+        },
+        "expectation": {
+          "expected_status": "SOLVED"
+        }
+      },
+      {
+        "case_kind": "family",
+        "case_key": "host_window_3a7a4afc7e0108f82b824c6f231b30e7",
+        "invocation": {
+          "realization_kind": "self_geometry",
+          "product_origin": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "length_unit": {},
+          "public_parameters": {
+            "host_a_m": [
+              6.132701717057898,
+              2.4344379823551776,
+              0.0
+            ],
+            "host_b_m": [
+              -18.244713535568735,
+              -7.24242359360845,
+              0.0
+            ],
+            "host_outer_diameter_m": 0.2
+          },
+          "external_constraints": [
+            {
+              "interface_key": "gas_branch",
+              "condition": {
+                "kind": "finite_segment",
+                "start_m": [
+                  0.2978017178556911,
+                  0.11813798508507034,
+                  0.0
+                ],
+                "end_m": [
+                  0.15840171624131472,
+                  0.06283798403006813,
+                  0.0
+                ],
+                "outer_diameter_m": 0.05,
+                "direction_relation": "same"
+              }
+            }
+          ]
+        },
+        "expectation": {
+          "expected_status": "SOLVED"
+        }
+      },
+      {
+        "case_kind": "family",
+        "case_key": "host_window_4054c9c93abd5173f3c34cb9b72aa71c",
+        "invocation": {
+          "realization_kind": "self_geometry",
+          "product_origin": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "length_unit": {},
+          "public_parameters": {
+            "host_a_m": [
+              -0.39377910750135925,
+              -0.15808609121170036,
+              0.0
+            ],
+            "host_b_m": [
+              0.3404378112163613,
+              0.13667175797452558,
+              0.0
+            ],
+            "host_outer_diameter_m": 0.1
+          },
+          "external_constraints": [
+            {
+              "interface_key": "gas_branch",
+              "condition": {
+                "kind": "finite_segment",
+                "start_m": [
+                  -0.0069621872398784035,
+                  -0.0028282416082419104,
+                  0.0
+                ],
+                "end_m": [
+                  5.4707378115263054,
+                  2.2223717595421277,
+                  0.0
+                ],
+                "outer_diameter_m": 0.05,
+                "direction_relation": "same"
+              }
+            }
+          ]
+        },
+        "expectation": {
+          "expected_status": "SOLVED"
+        }
+      },
+      {
+        "case_kind": "family",
+        "case_key": "host_window_92a275c47ef2642118cdcb006f8953ee",
+        "invocation": {
+          "realization_kind": "self_geometry",
+          "product_origin": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "length_unit": {},
+          "public_parameters": {
+            "host_a_m": [
+              -4.0754663401767175,
+              -2.1797038220200307,
+              0.0
+            ],
+            "host_b_m": [
+              7.030971368132668,
+              3.7604126459229974,
+              0.0
+            ],
+            "host_outer_diameter_m": 0.2
+          },
+          "external_constraints": [
+            {
+              "interface_key": "gas_branch",
+              "condition": {
+                "kind": "finite_segment",
+                "start_m": [
+                  -0.011028635027287237,
+                  -0.005787356359803653,
+                  0.0
+                ],
+                "end_m": [
+                  3.089071368155601,
+                  1.6210126443077115,
+                  0.0
+                ],
+                "outer_diameter_m": 0.05,
+                "direction_relation": "same"
+              }
+            }
+          ]
+        },
+        "expectation": {
+          "expected_status": "SOLVED"
+        }
+      },
+      {
+        "case_kind": "family",
+        "case_key": "host_window_b0a25bb0c5fdae64e14d7d93d83de81b",
+        "invocation": {
+          "realization_kind": "self_geometry",
+          "product_origin": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "length_unit": {},
+          "public_parameters": {
+            "host_a_m": [
+              -2.573466551220008,
+              5.060499200352069,
+              0.0
+            ],
+            "host_b_m": [
+              0.17763344877221243,
+              -0.3493008001367457,
+              0.0
+            ],
+            "host_outer_diameter_m": 0.15
+          },
+          "external_constraints": [
+            {
+              "interface_key": "gas_branch",
+              "condition": {
+                "kind": "finite_segment",
+                "start_m": [
+                  -0.003566552616575791,
+                  0.007299201317550796,
+                  0.0
+                ],
+                "end_m": [
+                  0.3915334486282518,
+                  -0.8013007997195132,
+                  0.0
+                ],
+                "outer_diameter_m": 0.032,
+                "direction_relation": "same"
+              }
+            }
+          ]
+        },
+        "expectation": {
+          "expected_status": "SOLVED"
+        }
+      }
+    ]
+  },
+  "nominal_scenario_key": "standard_nominal"
+}

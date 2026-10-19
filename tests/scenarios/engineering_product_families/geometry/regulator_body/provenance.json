@@ -1,0 +1,40 @@
+{
+  "original_golden_template": "/home/example/代码/CAD2BIM-worktrees/ifc-golden-baseline-validation/resources/component_templates/调压器/template.ifc",
+  "original_golden_template_sha256": "3ddeb57aa2d2083132adeb9d87f39c7af789181e6addf3f4755ad810a54a13d1",
+  "authoring_source": "/home/example/Documents/Codex/2026-09-09/golden-geometry-targets/outputs/09_regulator/final/template_repaired.ifc",
+  "authoring_source_sha256": "928c0410740da11c1d83ac5875fa0dc40a1769205a546f6b4c9fead7949ca754",
+  "authoring_source_bytes": 79162,
+  "source_ifc_product_id": 1863,
+  "source_ifc_item_ids": [246, 351, 456, 569, 646, 1235, 1494, 1753, 1830],
+  "source_ifc_unit": "MILLI/METRE",
+  "canonical_candidate_path": "tmp/family-target-rebuild-20260923/execution/regulator-first-batch/body-gate/per-item-sewn-candidate-m.brep",
+  "canonical_candidate_sha256": "a3f7d38bd392f96d5bd5ad174b9986036d583cda3218b567a10b3db459eb5171",
+  "canonical_candidate_bytes": 148173,
+  "candidate_unit": "METRE",
+  "source_preserving_repair": "IfcOpenShell SERIALIZED product and item extraction returns unsewn analytic faces. OCCT sewing at 1e-7 m was applied separately to each of the nine source IfcAdvancedBrep items, then each closed shell was made into a solid. No face was added or removed; analytic face signatures, total area and bounds match the source after independent BREP reopening.",
+  "reopened_solid_count": 13,
+  "reopened_face_count": 66,
+  "reopened_free_edge_count": 0,
+  "body_local_frame": "+Z upright, local -X geometric left leg, local +X geometric right leg, local origin midway between leg end disks at z=0",
+  "left_end": {
+    "source_ifc_face_id": 1725,
+    "center_m": [-0.8937003968253989, 0.0, 0.0],
+    "outward_axis": [0.0, 0.0, -1.0],
+    "source_plane_ref_direction": [0.0, -1.0, 0.0],
+    "declared_reference_direction": [0.0, -1.0, 0.0],
+    "outer_diameter_m": 0.15,
+    "face_kind": "solid_disk_with_one_outer_boundary_no_inner_ring"
+  },
+  "right_end": {
+    "source_ifc_face_id": 1466,
+    "center_m": [0.8937003968253989, 0.0, 0.0],
+    "outward_axis": [0.0, 0.0, -1.0],
+    "source_plane_ref_direction": [0.0, -1.0, 0.0],
+    "declared_reference_direction": [0.0, -1.0, 0.0],
+    "outer_diameter_m": 0.15,
+    "face_kind": "solid_disk_with_one_outer_boundary_no_inner_ring"
+  },
+  "pressure_role_limit": "Source IFC has no IfcDistributionPort, IfcRelConnectsPorts or operational pressure direction. Geometric left/right is not manufacturer high/low identity; Family retains source high/low authority separately and records its explicit geometric pairing.",
+  "flow_limit": "Source end faces are solid disks. This candidate proves a closed exterior body and real OD/pose interfaces, not body through-flow, gas tightness or manufactured mating.",
+  "diagnostic_report_path": "tmp/family-target-rebuild-20260923/execution/regulator-first-batch/body-gate/body-topology-report.json"
+}

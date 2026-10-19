@@ -1,0 +1,20 @@
+{
+  "name": "cad2bim-chatgpt-auth",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "main": "build/main.cjs",
+  "scripts": {
+    "prepare-runtime": "node --use-env-proxy node_modules/electron/install.js",
+    "build": "esbuild main.ts --bundle --platform=node --format=cjs --external:electron --outfile=build/main.cjs",
+    "test": "node --test test/*.test.mjs"
+  },
+  "dependencies": {
+    "jose": "6.1.0",
+    "proper-lockfile": "4.1.2"
+  },
+  "devDependencies": {
+    "electron": "42.11.4",
+    "esbuild": "0.28.2"
+  }
+}

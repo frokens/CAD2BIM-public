@@ -1,0 +1,217 @@
+{
+  "product_structure_kind": "semantic_assembly",
+  "standard_model": {
+    "public_parameters": {
+      "host_a_m": [
+        -2,
+        0,
+        0
+      ],
+      "host_b_m": [
+        2,
+        0,
+        0
+      ],
+      "host_outer_diameter_m": 0.2,
+      "attachment_station_m": 0
+    }
+  },
+  "public_parameters": [
+    {
+      "parameter_kind": "number_array",
+      "parameter_key": "host_a_m",
+      "length": 3,
+      "unit": "metre"
+    },
+    {
+      "parameter_kind": "number_array",
+      "parameter_key": "host_b_m",
+      "length": 3,
+      "unit": "metre"
+    },
+    {
+      "parameter_kind": "number",
+      "parameter_key": "host_outer_diameter_m",
+      "unit": "metre",
+      "minimum": 5e-324
+    },
+    {
+      "parameter_kind": "number",
+      "parameter_key": "attachment_station_m",
+      "unit": "metre",
+      "minimum": 0
+    }
+  ],
+  "solved_parameters": [
+    {
+      "parameter_kind": "number_array",
+      "parameter_key": "attachment_point_m",
+      "length": 3,
+      "unit": "metre",
+      "minimum": -1.7976931348623157e+308,
+      "maximum": 1.7976931348623157e+308
+    },
+    {
+      "parameter_kind": "number",
+      "parameter_key": "selected_station_m",
+      "unit": "metre",
+      "minimum": 0,
+      "maximum": 1.7976931348623157e+308
+    },
+    {
+      "parameter_kind": "number_array",
+      "parameter_key": "host_axis",
+      "length": 3,
+      "unit": "dimensionless",
+      "minimum": -1,
+      "maximum": 1
+    },
+    {
+      "parameter_kind": "number_array",
+      "parameter_key": "outward_radial",
+      "length": 3,
+      "unit": "dimensionless",
+      "minimum": -1,
+      "maximum": 1
+    }
+  ],
+  "components": [
+    {
+      "component_key": "cast_body",
+      "ifc_class": "IfcDiscreteAccessory"
+    },
+    {
+      "component_key": "core",
+      "ifc_class": "IfcDiscreteAccessory",
+      "parent_component_key": "cast_body"
+    },
+    {
+      "component_key": "exit_seal",
+      "ifc_class": "IfcDiscreteAccessory",
+      "parent_component_key": "cast_body"
+    },
+    {
+      "component_key": "lead_jacket",
+      "ifc_class": "IfcDiscreteAccessory",
+      "parent_component_key": "cast_body"
+    },
+    {
+      "component_key": "lead_conductor",
+      "ifc_class": "IfcDiscreteAccessory",
+      "parent_component_key": "cast_body"
+    }
+  ],
+  "geometry_fragments": [
+    {
+      "fragment_key": "cast_body_shape",
+      "owner_component_key": "cast_body",
+      "binding_options": [
+        {
+          "binding_key": "cast_body",
+          "parameter_sources": {
+            "overrides": {}
+          },
+          "uniform_scale_source": {
+            "source_kind": "fixed",
+            "value": 1
+          }
+        }
+      ],
+      "local_transform_mode": "program"
+    },
+    {
+      "fragment_key": "core_shape",
+      "owner_component_key": "core",
+      "binding_options": [
+        {
+          "binding_key": "core",
+          "parameter_sources": {
+            "overrides": {}
+          },
+          "uniform_scale_source": {
+            "source_kind": "fixed",
+            "value": 1
+          }
+        }
+      ],
+      "local_transform_mode": "program"
+    },
+    {
+      "fragment_key": "exit_seal_shape",
+      "owner_component_key": "exit_seal",
+      "binding_options": [
+        {
+          "binding_key": "exit_seal",
+          "parameter_sources": {
+            "overrides": {}
+          },
+          "uniform_scale_source": {
+            "source_kind": "fixed",
+            "value": 1
+          }
+        }
+      ],
+      "local_transform_mode": "program"
+    },
+    {
+      "fragment_key": "lead_jacket_shape",
+      "owner_component_key": "lead_jacket",
+      "binding_options": [
+        {
+          "binding_key": "lead_jacket",
+          "parameter_sources": {
+            "overrides": {}
+          },
+          "uniform_scale_source": {
+            "source_kind": "fixed",
+            "value": 1
+          }
+        }
+      ],
+      "local_transform_mode": "program"
+    },
+    {
+      "fragment_key": "lead_conductor_shape",
+      "owner_component_key": "lead_conductor",
+      "binding_options": [
+        {
+          "binding_key": "lead_conductor",
+          "parameter_sources": {
+            "overrides": {}
+          },
+          "uniform_scale_source": {
+            "source_kind": "fixed",
+            "value": 1
+          }
+        }
+      ],
+      "local_transform_mode": "program"
+    }
+  ],
+  "interfaces": [
+    {
+      "interface_key": "business_attachment",
+      "owner_component_key": "lead_conductor",
+      "interface_kind": "external",
+      "source": {
+        "source_kind": "model_interface",
+        "fragment_key": "lead_conductor_shape",
+        "model_interface_key": "free_lead_tip"
+      },
+      "external_constraint": {
+        "required": false,
+        "allowed_directions": [
+          "same"
+        ],
+        "roll_required": false,
+        "profile_required": false,
+        "maximum_position_tolerance_m": 0.001,
+        "maximum_angular_tolerance_rad": 0.017453292519943295,
+        "allowed_kinds": [
+          "fixed_point"
+        ]
+      }
+    }
+  ],
+  "constraints": []
+}

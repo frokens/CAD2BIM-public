@@ -1,0 +1,18 @@
+{
+  "category": "CROSS",
+  "family": {
+    "definition_path": "families/cross/definition.json",
+    "source_files": [{"repo_path": "families/cross/program/main.py", "bundle_path": "main.py"}, {"repo_path": "shared/local_geometry_frame.py", "bundle_path": "local_geometry_frame.py"}],
+    "preview_cases_path": "families/cross/preview_cases.json",
+    "usage_path": "families/cross/usage.md"
+  },
+  "geometry_bindings": [{
+    "binding_key": "cross_body_geometry",
+    "resource_kind": "modeling_function",
+    "geometry_purpose": "product_component",
+    "source_files": [{"repo_path": "geometry/cross_body/main.py", "bundle_path": "main.py"}, {"repo_path": "geometry/cross_body/interfaces.py", "bundle_path": "interfaces.py"}, {"repo_path": "geometry/cross_body/parameters.py", "bundle_path": "parameters.py"}],
+    "parameter_schema_path": "geometry/cross_body/parameter_schema.json",
+    "validation_samples_path": "geometry/cross_body/validation_samples.json",
+    "usage_path": "geometry/cross_body/usage.md"
+  }]
+}

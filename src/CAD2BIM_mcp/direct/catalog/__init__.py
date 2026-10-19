@@ -1,0 +1,1 @@
+"""Direct Package catalog capability."""

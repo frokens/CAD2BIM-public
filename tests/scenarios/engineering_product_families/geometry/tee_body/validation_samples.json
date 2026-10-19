@@ -1,0 +1,227 @@
+[
+  {
+    "ports": {
+      "side_a": {"origin_m": [-0.218627147774896, 0.18440365739576237, 0.0], "axis": [-0.7644000349479817, 0.6447422636771413, 0.0], "reference_direction": [0.0, 0.0, 1.0], "outer_diameter_m": 0.2},
+      "side_b": {"origin_m": [0.2186031925248244, -0.1844320547601228, 0.0], "axis": [0.7643162786801174, -0.6448415511926765, 0.0], "reference_direction": [0.0, 0.0, 1.0], "outer_diameter_m": 0.2},
+      "side_c": {"origin_m": [-0.3678812647067389, -0.4298920332295779, 0.0], "axis": [-0.6501822860159867, -0.7597782538024009, 0.0], "reference_direction": [0.0, 0.0, 1.0], "outer_diameter_m": 0.1}
+    },
+    "shape": {"mode": "near_zero", "local_center_m": [0.0, 0.0, 0.0], "bend_scale_m": 0.11001143089960763, "branch_neck_scale_m": 0.308, "main_a_key": "a", "main_b_key": "b", "branch_key": "c", "turn_radian": 0.00012989658645027005}
+  },
+  {
+    "ports": {
+      "side_a": {
+        "origin_m": [
+          -0.28600000000000003,
+          0.0,
+          0.0
+        ],
+        "axis": [
+          -1.0,
+          0.0,
+          0.0
+        ],
+        "reference_direction": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "outer_diameter_m": 0.2
+      },
+      "side_b": {
+        "origin_m": [
+          0.28600000000000003,
+          0.0,
+          0.0
+        ],
+        "axis": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "reference_direction": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "outer_diameter_m": 0.2
+      },
+      "side_c": {
+        "origin_m": [
+          0.0,
+          0.5658125,
+          0.0
+        ],
+        "axis": [
+          0.0,
+          1.0,
+          0.0
+        ],
+        "reference_direction": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "outer_diameter_m": 0.1
+      }
+    },
+    "shape": {
+      "mode": "straight",
+      "local_center_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "bend_scale_m": 0.11000000000000001,
+      "branch_neck_scale_m": 0.308,
+      "main_a_key": "a",
+      "main_b_key": "b",
+      "branch_key": "c"
+    }
+  },
+  {
+    "ports": {
+      "side_a": {
+        "origin_m": [
+          0.6218466154947002,
+          1.0,
+          0.0
+        ],
+        "axis": [
+          -1.0,
+          0.0,
+          0.0
+        ],
+        "reference_direction": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "outer_diameter_m": 0.2
+      },
+      "side_b": {
+        "origin_m": [
+          1.2012989144748722,
+          1.3486599473789411,
+          0.0
+        ],
+        "axis": [
+          0.5000000000000001,
+          0.8660254037844385,
+          0.0
+        ],
+        "reference_direction": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "outer_diameter_m": 0.16
+      },
+      "side_c": {
+        "origin_m": [
+          1.0,
+          0.43418750000000017,
+          0.0
+        ],
+        "axis": [
+          0.0,
+          -1.0,
+          0.0
+        ],
+        "reference_direction": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "outer_diameter_m": 0.1
+      }
+    },
+    "shape": {
+      "mode": "curved",
+      "local_center_m": [
+        1.0,
+        1.0,
+        0.0
+      ],
+      "bend_scale_m": 0.20215338450530063,
+      "branch_neck_scale_m": 0.308,
+      "main_a_key": "a",
+      "main_b_key": "b",
+      "branch_key": "c",
+      "turn_radian": 1.0471975511965976,
+      "arc_radius_m": 0.315125939596669
+    }
+  },
+  {
+    "ports": {
+      "side_a": {
+        "origin_m": [
+          0.6546000000000003,
+          1.0,
+          0.0
+        ],
+        "axis": [
+          -1.0,
+          0.0,
+          0.0
+        ],
+        "reference_direction": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "outer_diameter_m": 0.2
+      },
+      "side_b": {
+        "origin_m": [
+          1.1328306769010599,
+          1.2300694811964021,
+          0.0
+        ],
+        "axis": [
+          0.5000000000000001,
+          0.8660254037844385,
+          0.0
+        ],
+        "reference_direction": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "outer_diameter_m": 0.16
+      },
+      "side_c": {
+        "origin_m": [
+          1.0,
+          0.6937232615824946,
+          0.0
+        ],
+        "axis": [
+          0.0,
+          -1.0,
+          0.0
+        ],
+        "reference_direction": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "outer_diameter_m": 0.1
+      }
+    },
+    "shape": {
+      "mode": "curved",
+      "local_center_m": [
+        1.0,
+        1.0,
+        0.0
+      ],
+      "bend_scale_m": 0.12486135380212027,
+      "branch_neck_scale_m": 0.2464,
+      "main_a_key": "c",
+      "main_b_key": "b",
+      "branch_key": "a",
+      "turn_radian": 0.523598775598299,
+      "arc_radius_m": 0.4193900246622115
+    }
+  }
+]

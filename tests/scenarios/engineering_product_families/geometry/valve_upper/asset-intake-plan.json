@@ -1,0 +1,37 @@
+{
+  "status": "read_only_2b_candidate_no_publication",
+  "owner": "GeometryResourceService.import_mapped_asset",
+  "scope_kind": "task",
+  "scope_requirement": "same tenant_id and task_id as VALVE Family authoring invocation",
+  "source_name": "valve_upper_closed.brep",
+  "source_path": "tests/scenarios/engineering_product_families/assets/mapped_geometry/valve_upper/valve_upper_closed.brep",
+  "source_sha256": "c5619c9d183ec9a90d3d0f38b1bb26811a0b23f5f21c2403449294d50dd8dd32",
+  "source_bytes": 104798,
+  "normalization": {
+    "format": "occt_brep_v1",
+    "source_format": "occt_brep",
+    "unit": "METRE",
+    "transform": null,
+    "include_summary": true
+  },
+  "source_documents": [
+    "geometry/valve_upper/provenance.json",
+    "geometry/valve_upper/usage.md"
+  ],
+  "intake_result_to_verify": [
+    "exact TASK owner and mapped_model kind",
+    "canonical BREP normalization and reopen",
+    "source bundle retains exact BREP and documents",
+    "immutable asset and database readback",
+    "content digest and exact resource version reference"
+  ],
+  "intake_operation_semantics": "backend_import has no geometry-authoring CriticalOperation",
+  "annotation": {
+    "owner": "GeometryAuthoringService.annotate_interfaces",
+    "target_kind": "same_task_root",
+    "interfaces": [],
+    "usage_instructions_path": "geometry/valve_upper/usage.md",
+    "result_to_verify": "new exact mapped version with usage, same canonical/source bytes and its own geometry-resource-write Operation"
+  },
+  "family_binding": "bind annotated upper exact and already selected shared curved_two_port v3 exact only after both are visible in the same invocation Scope"
+}

@@ -1,0 +1,20 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["points_m", "outer_diameter_m", "section"],
+  "properties": {
+    "points_m": {
+      "type": "array", "minItems": 2, "maxItems": 16,
+      "items": {"type": "array", "minItems": 3, "maxItems": 3,
+        "items": {"type": "number", "minimum": -1000, "maximum": 1000}}
+    },
+    "outer_diameter_m": {"type": "number", "minimum": 0.005, "maximum": 2},
+    "section": {
+      "type": "object", "additionalProperties": false, "required": ["mode"],
+      "properties": {
+        "mode": {"type": "string", "enum": ["solid_envelope", "wall_thickness"]},
+        "wall_thickness_m": {"type": "number", "minimum": 0, "maximum": 1, "default": 0}
+      }
+    }
+  }
+}

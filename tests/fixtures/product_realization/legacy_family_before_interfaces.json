@@ -1,0 +1,763 @@
+{
+  "captured_before_family_interface_changes": true,
+  "head": "ce5ab59700e3e224721c9d4b71edf7964845e014",
+  "family_contract": {
+    "schema": "product_family_contract_v1",
+    "product_structure_kind": "single_product",
+    "components": [
+      {
+        "component_key": "body",
+        "ifc_class": "IfcValve",
+        "parent_component_key": null
+      }
+    ],
+    "geometry_fragments": [
+      {
+        "fragment_key": "body_shape",
+        "owner_component_key": "body",
+        "binding_key": "body_geometry"
+      }
+    ],
+    "interfaces": [
+      {
+        "interface_key": "inlet",
+        "owner_component_key": "body",
+        "interface_kind": "external",
+        "adapter_binding_key": null,
+        "declared_frame": {
+          "origin_m": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "axis": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "reference_direction": [
+            1.0,
+            0.0,
+            0.0
+          ]
+        },
+        "connection_profile": {
+          "profile_kind": "circular",
+          "outer_diameter_m": 0.2,
+          "outer_diameter_parameter_key": null
+        }
+      },
+      {
+        "interface_key": "inner_a",
+        "owner_component_key": "body",
+        "interface_kind": "internal",
+        "adapter_binding_key": null
+      },
+      {
+        "interface_key": "inner_b",
+        "owner_component_key": "body",
+        "interface_kind": "internal",
+        "adapter_binding_key": null
+      }
+    ],
+    "constraints": [
+      {
+        "constraint_kind": "interface_coincidence",
+        "constraint_key": "legacy_pair",
+        "interface_a_key": "inner_a",
+        "interface_b_key": "inner_b",
+        "position_tolerance_m": 1e-06,
+        "angular_tolerance_rad": 1e-06
+      }
+    ]
+  },
+  "invocation": {
+    "public_parameters": {},
+    "datum_transform": {
+      "translation_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    "attachments": [
+      {
+        "attachment_key": "host",
+        "source_kind": "explicit",
+        "project_world_frame": {
+          "translation_m": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            [
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0
+            ]
+          ]
+        },
+        "profile": {
+          "profile_kind": "circular",
+          "outer_diameter_m": 0.2
+        }
+      }
+    ],
+    "interface_bindings": [
+      {
+        "interface_key": "inlet",
+        "attachment_key": "host"
+      }
+    ]
+  },
+  "policy": {
+    "mode": "preview",
+    "unit": "METRE",
+    "frame_tolerance_m": 1e-06,
+    "angular_tolerance_rad": 1e-06,
+    "allow_host_edits": false,
+    "host_edit_applied": false
+  },
+  "proposal": {
+    "status": "SOLVED",
+    "internal_parameters": {},
+    "root_world_transform": {
+      "translation_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    "components": [
+      {
+        "component_key": "body",
+        "local_transform": {
+          "translation_m": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            [
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0
+            ]
+          ]
+        }
+      }
+    ],
+    "fragments": [
+      {
+        "fragment_key": "body_shape",
+        "instance_handle": "instance_0001",
+        "local_transform": {
+          "translation_m": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            [
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0
+            ]
+          ]
+        }
+      }
+    ],
+    "interfaces": [
+      {
+        "interface_key": "inlet",
+        "local_frame": {
+          "translation_m": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            [
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0
+            ]
+          ]
+        },
+        "profile": {
+          "profile_kind": "circular",
+          "outer_diameter_m": 0.2
+        }
+      },
+      {
+        "interface_key": "inner_a",
+        "local_frame": {
+          "translation_m": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            [
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0
+            ]
+          ]
+        },
+        "profile": {
+          "profile_kind": "circular",
+          "outer_diameter_m": 0.2
+        }
+      },
+      {
+        "interface_key": "inner_b",
+        "local_frame": {
+          "translation_m": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            [
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0
+            ]
+          ]
+        },
+        "profile": {
+          "profile_kind": "circular",
+          "outer_diameter_m": 0.2
+        }
+      }
+    ],
+    "interface_bindings": [
+      {
+        "interface_key": "inlet",
+        "attachment_key": "host"
+      }
+    ],
+    "constraints": [
+      {
+        "constraint_key": "legacy_pair",
+        "satisfied": true,
+        "residual_m": 0.0,
+        "angular_residual_rad": 0.0
+      }
+    ],
+    "predicted_host_edits": [
+      {
+        "attachment_key": "host",
+        "edit_kind": "none"
+      }
+    ],
+    "host_edit_applied": false
+  },
+  "receipt": {
+    "instance_handle": "instance_0001",
+    "binding_key": "body_geometry",
+    "normalized_parameters": {},
+    "geometry_sha256": "e2869d393373b0c19d46e574ce3620e8bc540b56e22736c6c590f6c96b4870eb",
+    "geometry_summary": {
+      "format": "occt_brep_v1",
+      "unit": "METRE",
+      "bounds": {
+        "minimum_m": [
+          -0.5,
+          -0.25,
+          -0.125
+        ],
+        "maximum_m": [
+          0.5,
+          0.25,
+          0.125
+        ]
+      },
+      "topology": {
+        "vertex_count": 8,
+        "edge_count": 12,
+        "wire_count": 6,
+        "face_count": 6,
+        "shell_count": 1,
+        "solid_count": 1,
+        "triangle_count": 12,
+        "boundary_edge_count": 0
+      },
+      "surface_area_m2": 1.75,
+      "volume_m3": 0.125
+    }
+  },
+  "result": {
+    "abi_profile": "product_realization_v1",
+    "runtime_profile": "product_realization_python_v1",
+    "budget_profile": "product_realization_budget_v1",
+    "input_digest": "6076a9d479a99e6a7f580a907dc80734c082f7c2f5960a29b9afc3e021ebfb75",
+    "binding_digest": "44564ac4752aa6477e55f7780a7fd20ae82f3d295de1740b4efc4d654c1d58d0",
+    "source_bundle_sha256": "e3bcc1be22fd6ee9ef24bfc67a3ab4bdbaf09422cd28b279e7d245e73bbee316",
+    "normalized_public_parameters": {},
+    "proposal": {
+      "status": "SOLVED",
+      "internal_parameters": {},
+      "root_world_transform": {
+        "translation_m": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "rotation": [
+          [
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      },
+      "components": [
+        {
+          "component_key": "body",
+          "local_transform": {
+            "translation_m": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "rotation": [
+              [
+                1.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                1.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ]
+          }
+        }
+      ],
+      "fragments": [
+        {
+          "fragment_key": "body_shape",
+          "instance_handle": "instance_0001",
+          "local_transform": {
+            "translation_m": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "rotation": [
+              [
+                1.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                1.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ]
+          }
+        }
+      ],
+      "interfaces": [
+        {
+          "interface_key": "inlet",
+          "local_frame": {
+            "translation_m": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "rotation": [
+              [
+                1.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                1.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ]
+          },
+          "profile": {
+            "profile_kind": "circular",
+            "outer_diameter_m": 0.2
+          }
+        },
+        {
+          "interface_key": "inner_a",
+          "local_frame": {
+            "translation_m": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "rotation": [
+              [
+                1.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                1.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ]
+          },
+          "profile": {
+            "profile_kind": "circular",
+            "outer_diameter_m": 0.2
+          }
+        },
+        {
+          "interface_key": "inner_b",
+          "local_frame": {
+            "translation_m": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "rotation": [
+              [
+                1.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                1.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ]
+          },
+          "profile": {
+            "profile_kind": "circular",
+            "outer_diameter_m": 0.2
+          }
+        }
+      ],
+      "interface_bindings": [
+        {
+          "interface_key": "inlet",
+          "attachment_key": "host"
+        }
+      ],
+      "constraints": [
+        {
+          "constraint_key": "legacy_pair",
+          "satisfied": true,
+          "residual_m": 0.0,
+          "angular_residual_rad": 0.0
+        }
+      ],
+      "predicted_host_edits": [
+        {
+          "attachment_key": "host",
+          "edit_kind": "none"
+        }
+      ],
+      "host_edit_applied": false
+    },
+    "instance_receipts": [
+      {
+        "instance_handle": "instance_0001",
+        "binding_key": "body_geometry",
+        "normalized_parameters": {},
+        "geometry_sha256": "e2869d393373b0c19d46e574ce3620e8bc540b56e22736c6c590f6c96b4870eb",
+        "geometry_summary": {
+          "format": "occt_brep_v1",
+          "unit": "METRE",
+          "bounds": {
+            "minimum_m": [
+              -0.5,
+              -0.25,
+              -0.125
+            ],
+            "maximum_m": [
+              0.5,
+              0.25,
+              0.125
+            ]
+          },
+          "topology": {
+            "vertex_count": 8,
+            "edge_count": 12,
+            "wire_count": 6,
+            "face_count": 6,
+            "shell_count": 1,
+            "solid_count": 1,
+            "triangle_count": 12,
+            "boundary_edge_count": 0
+          },
+          "surface_area_m2": 1.75,
+          "volume_m3": 0.125
+        }
+      }
+    ],
+    "component_project_world_transforms": [
+      {
+        "component_key": "body",
+        "project_world_transform": {
+          "translation_m": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            [
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0
+            ]
+          ]
+        }
+      }
+    ],
+    "interface_project_world_frames": [
+      {
+        "interface_key": "inlet",
+        "project_world_frame": {
+          "translation_m": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            [
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0
+            ]
+          ]
+        },
+        "profile": {
+          "profile_kind": "circular",
+          "outer_diameter_m": 0.2
+        }
+      },
+      {
+        "interface_key": "inner_a",
+        "project_world_frame": {
+          "translation_m": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            [
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0
+            ]
+          ]
+        },
+        "profile": {
+          "profile_kind": "circular",
+          "outer_diameter_m": 0.2
+        }
+      },
+      {
+        "interface_key": "inner_b",
+        "project_world_frame": {
+          "translation_m": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            [
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0
+            ]
+          ]
+        },
+        "profile": {
+          "profile_kind": "circular",
+          "outer_diameter_m": 0.2
+        }
+      }
+    ],
+    "solve_digest": "d33d28d7f922109033419b1d1eabc9ead9a415ddd81247d346a66610705cb052"
+  },
+  "family_contract_canonical": "{\"components\":[{\"component_key\":\"body\",\"ifc_class\":\"IfcValve\",\"parent_component_key\":null}],\"constraints\":[{\"angular_tolerance_rad\":0.000001,\"constraint_key\":\"legacy_pair\",\"constraint_kind\":\"interface_coincidence\",\"interface_a_key\":\"inner_a\",\"interface_b_key\":\"inner_b\",\"position_tolerance_m\":0.000001}],\"geometry_fragments\":[{\"binding_key\":\"body_geometry\",\"fragment_key\":\"body_shape\",\"owner_component_key\":\"body\"}],\"interfaces\":[{\"adapter_binding_key\":null,\"connection_profile\":{\"outer_diameter_m\":0.2,\"outer_diameter_parameter_key\":null,\"profile_kind\":\"circular\"},\"declared_frame\":{\"axis\":[0,0,1],\"origin_m\":[0,0,0],\"reference_direction\":[1,0,0]},\"interface_key\":\"inlet\",\"interface_kind\":\"external\",\"owner_component_key\":\"body\"},{\"adapter_binding_key\":null,\"interface_key\":\"inner_a\",\"interface_kind\":\"internal\",\"owner_component_key\":\"body\"},{\"adapter_binding_key\":null,\"interface_key\":\"inner_b\",\"interface_kind\":\"internal\",\"owner_component_key\":\"body\"}],\"product_structure_kind\":\"single_product\",\"schema\":\"product_family_contract_v1\"}",
+  "family_contract_digest": "8ca815f294fad55725b7f81caff24fdff31a61dd2892f9d8e8529400bb328e7f",
+  "source_bundle_sha256": "e3bcc1be22fd6ee9ef24bfc67a3ab4bdbaf09422cd28b279e7d245e73bbee316",
+  "geometry_binding_content_digest": "e2869d393373b0c19d46e574ce3620e8bc540b56e22736c6c590f6c96b4870eb"
+}

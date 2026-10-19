@@ -1,0 +1,180 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "side_a_outer_diameter_m",
+    "side_b_outer_diameter_m",
+    "side_c_outer_diameter_m",
+    "side_d_outer_diameter_m",
+    "local_center_m",
+    "chamber_radius_m",
+    "chamber_wall_m",
+    "seam_allowance_m",
+    "side_a_local_port_m",
+    "side_a_outward_axis",
+    "side_a_reference_axis",
+    "side_a_wall_m",
+    "side_b_local_port_m",
+    "side_b_outward_axis",
+    "side_b_reference_axis",
+    "side_b_wall_m",
+    "side_c_local_port_m",
+    "side_c_outward_axis",
+    "side_c_reference_axis",
+    "side_c_wall_m",
+    "side_d_local_port_m",
+    "side_d_outward_axis",
+    "side_d_reference_axis",
+    "side_d_wall_m"
+  ],
+  "properties": {
+    "side_a_outer_diameter_m": {
+      "type": "number",
+      "exclusiveMinimum": 0
+    },
+    "side_b_outer_diameter_m": {
+      "type": "number",
+      "exclusiveMinimum": 0
+    },
+    "side_c_outer_diameter_m": {
+      "type": "number",
+      "exclusiveMinimum": 0
+    },
+    "side_d_outer_diameter_m": {
+      "type": "number",
+      "exclusiveMinimum": 0
+    },
+    "local_center_m": {
+      "type": "array",
+      "minItems": 3,
+      "maxItems": 3,
+      "items": {
+        "type": "number"
+      }
+    },
+    "chamber_radius_m": {
+      "type": "number",
+      "exclusiveMinimum": 0
+    },
+    "chamber_wall_m": {
+      "type": "number",
+      "exclusiveMinimum": 0
+    },
+    "seam_allowance_m": {
+      "type": "number",
+      "exclusiveMinimum": 0
+    },
+    "side_a_local_port_m": {
+      "type": "array",
+      "minItems": 3,
+      "maxItems": 3,
+      "items": {
+        "type": "number"
+      }
+    },
+    "side_a_outward_axis": {
+      "type": "array",
+      "minItems": 3,
+      "maxItems": 3,
+      "items": {
+        "type": "number"
+      }
+    },
+    "side_a_reference_axis": {
+      "type": "array",
+      "minItems": 3,
+      "maxItems": 3,
+      "items": {
+        "type": "number"
+      }
+    },
+    "side_a_wall_m": {
+      "type": "number",
+      "exclusiveMinimum": 0
+    },
+    "side_b_local_port_m": {
+      "type": "array",
+      "minItems": 3,
+      "maxItems": 3,
+      "items": {
+        "type": "number"
+      }
+    },
+    "side_b_outward_axis": {
+      "type": "array",
+      "minItems": 3,
+      "maxItems": 3,
+      "items": {
+        "type": "number"
+      }
+    },
+    "side_b_reference_axis": {
+      "type": "array",
+      "minItems": 3,
+      "maxItems": 3,
+      "items": {
+        "type": "number"
+      }
+    },
+    "side_b_wall_m": {
+      "type": "number",
+      "exclusiveMinimum": 0
+    },
+    "side_c_local_port_m": {
+      "type": "array",
+      "minItems": 3,
+      "maxItems": 3,
+      "items": {
+        "type": "number"
+      }
+    },
+    "side_c_outward_axis": {
+      "type": "array",
+      "minItems": 3,
+      "maxItems": 3,
+      "items": {
+        "type": "number"
+      }
+    },
+    "side_c_reference_axis": {
+      "type": "array",
+      "minItems": 3,
+      "maxItems": 3,
+      "items": {
+        "type": "number"
+      }
+    },
+    "side_c_wall_m": {
+      "type": "number",
+      "exclusiveMinimum": 0
+    },
+    "side_d_local_port_m": {
+      "type": "array",
+      "minItems": 3,
+      "maxItems": 3,
+      "items": {
+        "type": "number"
+      }
+    },
+    "side_d_outward_axis": {
+      "type": "array",
+      "minItems": 3,
+      "maxItems": 3,
+      "items": {
+        "type": "number"
+      }
+    },
+    "side_d_reference_axis": {
+      "type": "array",
+      "minItems": 3,
+      "maxItems": 3,
+      "items": {
+        "type": "number"
+      }
+    },
+    "side_d_wall_m": {
+      "type": "number",
+      "exclusiveMinimum": 0
+    }
+  }
+}

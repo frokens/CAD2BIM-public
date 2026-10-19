@@ -1,0 +1,58 @@
+{
+  "schema": "cad2bim_geometry_canonical_reopen_fixture_manifest_v1",
+  "fixtures": [
+    {
+      "file": "spherical_junction_raw.brep",
+      "sha256": "1a0fbd88b81307ca3bbd644353232b3c48db6eb264db2473014078fde50cc13e",
+      "size_bytes": 61317,
+      "source_path_for_provenance_only": "v-fisher/simple-regulator-connection-codec-retest-preparation/reports/astra-spherical-canonical-diagnostic/runs/replay-r1/child/rebuilt-raw.brep",
+      "source_identity": "independent boundary replay of native item 31, Family v5 and Geometry v1",
+      "legacy_status": "bounded_reopen_orbit_exhaustion_then_unsupported_surface_tag_4",
+      "expected_basis_fallback_sha256": "c7d7833016aee645b682638d2bf8190034f2fd6bc1226394c0ba5f60723419db",
+      "user_build_boundary_canonical_sha256": "59fdb703482387998716713eca642e93bc3c6b575dd5b3c4af1701587b782f9f",
+      "current_status": "spherical_basis_fallback_regression_target",
+      "basis_projection_test_oracle": {
+        "surface_sphere_offsets": [11, 14, 18, 21],
+        "surface_wrapper_offsets": [10, 13, 17, 20],
+        "sphere_tag": "4",
+        "sphere_token_count": 14,
+        "projected_token_indices": [7, 8, 9, 10, 11, 12],
+        "source": "OCCT V7_9_3 GeomTools_SurfaceSet sphere writer and independently counted frozen raw records"
+      }
+    },
+    {
+      "file": "oblique_boolean_raw.brep",
+      "sha256": "3bfda8db82d9f6aeb0739f40ef339aad4da24e3286feb2b50a2595a448019df1",
+      "size_bytes": 49628,
+      "source_path_for_provenance_only": "v-fisher/connection-first-luna-preparation/codec-orbit-investigation/reproduction-r3-byte-evidence/payloads/orbit-000-raw.brep",
+      "source_identity": "attempt-04/sample-1",
+      "legacy_status": "bounded_reopen_orbit_exhaustion",
+      "expected_basis_fallback_sha256": "c2e72a5281a8b80e6b47fa9caa24744167fada12ccf630d81af7e4bf8c60cc96",
+      "superseded_unpublished_experimental_candidate_sha256": "f899ce0d02ec0d4a8299519afa09d94344a852921800de00caede5bd638a70e0",
+      "current_status": "basis_fallback_regression_target",
+      "basis_projection_test_oracle": {
+        "record_offsets_from_section_heading": {
+          "curve_circle": [4, 19, 32, 34, 36, 40, 43, 45, 48, 49, 53, 57],
+          "curve_ellipse": [17, 22, 27, 28, 30, 33, 46, 47, 50, 51, 54, 55],
+          "surface_plane": [1, 2, 4, 6, 7, 8, 9, 11, 14, 16, 17, 18, 20, 22],
+          "surface_cylinder": [3, 5, 10, 13, 15, 19, 21]
+        },
+        "record_shapes": {
+          "curve_circle": {"section": "Curves", "tag": "2", "token_count": 14},
+          "curve_ellipse": {"section": "Curves", "tag": "3", "token_count": 15},
+          "surface_plane": {"section": "Surfaces", "tag": "1", "token_count": 13},
+          "surface_cylinder": {"section": "Surfaces", "tag": "2", "token_count": 14}
+        },
+        "source": "controller basis-projection candidate frozen fixture layout"
+      }
+    },
+    {
+      "file": "mapped_body_canonical.brep",
+      "sha256": "50c1e2f497b0fce8e26cc24cbf6b810b5120d6adf7cf7f3e3ec4395abc6d40f9",
+      "size_bytes": 14275,
+      "source_path_for_provenance_only": "v-preparation/reviewed-system-seed/family-format-catalog/sources/model-c.brep",
+      "source_identity": "mapped_brep_body_c",
+      "current_status": "legacy_exact_canonical_payload"
+    }
+  ]
+}

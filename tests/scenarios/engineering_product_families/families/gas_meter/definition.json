@@ -1,0 +1,284 @@
+{
+  "product_structure_kind": "semantic_assembly",
+  "standard_model": {},
+  "public_parameters": [],
+  "solved_parameters": [
+    {
+      "parameter_kind": "number",
+      "parameter_key": "left_length_m",
+      "unit": "metre",
+      "minimum": 5e-324,
+      "maximum": 1.7976931348623157e+308
+    },
+    {
+      "parameter_kind": "number",
+      "parameter_key": "right_length_m",
+      "unit": "metre",
+      "minimum": 5e-324,
+      "maximum": 1.7976931348623157e+308
+    },
+    {
+      "parameter_kind": "number_array",
+      "parameter_key": "body_center_m",
+      "length": 3,
+      "unit": "metre",
+      "minimum": -1.7976931348623157e+308,
+      "maximum": 1.7976931348623157e+308
+    },
+    {
+      "parameter_kind": "number_array",
+      "parameter_key": "left_internal_m",
+      "length": 3,
+      "unit": "metre",
+      "minimum": -1.7976931348623157e+308,
+      "maximum": 1.7976931348623157e+308
+    },
+    {
+      "parameter_kind": "number_array",
+      "parameter_key": "right_internal_m",
+      "length": 3,
+      "unit": "metre",
+      "minimum": -1.7976931348623157e+308,
+      "maximum": 1.7976931348623157e+308
+    },
+    {
+      "parameter_kind": "number_array",
+      "parameter_key": "left_external_m",
+      "length": 3,
+      "unit": "metre",
+      "minimum": -1.7976931348623157e+308,
+      "maximum": 1.7976931348623157e+308
+    },
+    {
+      "parameter_kind": "number_array",
+      "parameter_key": "right_external_m",
+      "length": 3,
+      "unit": "metre",
+      "minimum": -1.7976931348623157e+308,
+      "maximum": 1.7976931348623157e+308
+    },
+    {
+      "parameter_kind": "number_array",
+      "parameter_key": "axis_right",
+      "length": 3,
+      "unit": "dimensionless",
+      "minimum": -1,
+      "maximum": 1
+    },
+    {
+      "parameter_kind": "number",
+      "parameter_key": "left_outer_diameter_m",
+      "unit": "metre",
+      "minimum": 5e-324,
+      "maximum": 1.7976931348623157e+308
+    },
+    {
+      "parameter_kind": "number",
+      "parameter_key": "right_outer_diameter_m",
+      "unit": "metre",
+      "minimum": 5e-324,
+      "maximum": 1.7976931348623157e+308
+    }
+  ],
+  "components": [
+    {
+      "component_key": "body",
+      "ifc_class": "IfcFlowMeter"
+    },
+    {
+      "component_key": "left_fitting",
+      "ifc_class": "IfcPipeFitting",
+      "parent_component_key": "body"
+    },
+    {
+      "component_key": "right_fitting",
+      "ifc_class": "IfcPipeFitting",
+      "parent_component_key": "body"
+    }
+  ],
+  "geometry_fragments": [
+    {
+      "fragment_key": "body_shape",
+      "owner_component_key": "body",
+      "binding_options": [
+        {
+          "binding_key": "body_geometry",
+          "parameter_sources": {
+            "overrides": {}
+          },
+          "uniform_scale_source": {
+            "source_kind": "fixed",
+            "value": 1
+          }
+        }
+      ],
+      "local_transform_mode": "program"
+    },
+    {
+      "fragment_key": "left_shape",
+      "owner_component_key": "left_fitting",
+      "binding_options": [
+        {
+          "binding_key": "connector_geometry",
+          "parameter_sources": {
+            "overrides": {
+              "od_m": {
+                "source_kind": "solved_parameter",
+                "parameter_key": "left_outer_diameter_m"
+              },
+              "length_m": {
+                "source_kind": "solved_parameter",
+                "parameter_key": "left_length_m"
+              }
+            }
+          },
+          "uniform_scale_source": {
+            "source_kind": "fixed",
+            "value": 1
+          }
+        }
+      ],
+      "local_transform_mode": "program"
+    },
+    {
+      "fragment_key": "right_shape",
+      "owner_component_key": "right_fitting",
+      "binding_options": [
+        {
+          "binding_key": "connector_geometry",
+          "parameter_sources": {
+            "overrides": {
+              "od_m": {
+                "source_kind": "solved_parameter",
+                "parameter_key": "right_outer_diameter_m"
+              },
+              "length_m": {
+                "source_kind": "solved_parameter",
+                "parameter_key": "right_length_m"
+              }
+            }
+          },
+          "uniform_scale_source": {
+            "source_kind": "fixed",
+            "value": 1
+          }
+        }
+      ],
+      "local_transform_mode": "program"
+    }
+  ],
+  "interfaces": [
+    {
+      "interface_key": "left_body_attachment",
+      "owner_component_key": "body",
+      "interface_kind": "internal",
+      "source": {
+        "source_kind": "model_interface",
+        "fragment_key": "body_shape",
+        "model_interface_key": "left_attachment"
+      }
+    },
+    {
+      "interface_key": "right_body_attachment",
+      "owner_component_key": "body",
+      "interface_kind": "internal",
+      "source": {
+        "source_kind": "model_interface",
+        "fragment_key": "body_shape",
+        "model_interface_key": "right_attachment"
+      }
+    },
+    {
+      "interface_key": "left_connector_joint",
+      "owner_component_key": "left_fitting",
+      "interface_kind": "internal",
+      "source": {
+        "source_kind": "model_interface",
+        "fragment_key": "left_shape",
+        "model_interface_key": "body_joint"
+      }
+    },
+    {
+      "interface_key": "right_connector_joint",
+      "owner_component_key": "right_fitting",
+      "interface_kind": "internal",
+      "source": {
+        "source_kind": "model_interface",
+        "fragment_key": "right_shape",
+        "model_interface_key": "body_joint"
+      }
+    },
+    {
+      "interface_key": "gas_left",
+      "owner_component_key": "left_fitting",
+      "interface_kind": "external",
+      "source": {
+        "source_kind": "model_interface",
+        "fragment_key": "left_shape",
+        "model_interface_key": "gas_end"
+      },
+      "external_constraint": {
+        "required": true,
+        "allowed_kinds": [
+          "finite_segment"
+        ],
+        "allowed_directions": [
+          "same"
+        ],
+        "profile_required": true,
+        "maximum_position_tolerance_m": 1e-06,
+        "maximum_angular_tolerance_rad": 1e-06
+      }
+    },
+    {
+      "interface_key": "gas_right",
+      "owner_component_key": "right_fitting",
+      "interface_kind": "external",
+      "source": {
+        "source_kind": "model_interface",
+        "fragment_key": "right_shape",
+        "model_interface_key": "gas_end"
+      },
+      "external_constraint": {
+        "required": true,
+        "allowed_kinds": [
+          "finite_segment"
+        ],
+        "allowed_directions": [
+          "same"
+        ],
+        "profile_required": true,
+        "maximum_position_tolerance_m": 1e-06,
+        "maximum_angular_tolerance_rad": 1e-06
+      }
+    }
+  ],
+  "constraints": [
+    {
+      "constraint_kind": "interface_coincidence",
+      "constraint_key": "left_attachment",
+      "interface_a_key": "left_body_attachment",
+      "interface_b_key": "left_connector_joint",
+      "position_tolerance_m": 1e-06,
+      "angular_tolerance_rad": 1e-06,
+      "frame_relation": {
+        "direction_relation": "opposed",
+        "orientation_requirement": "full_frame",
+        "profile_requirement": "none"
+      }
+    },
+    {
+      "constraint_kind": "interface_coincidence",
+      "constraint_key": "right_attachment",
+      "interface_a_key": "right_body_attachment",
+      "interface_b_key": "right_connector_joint",
+      "position_tolerance_m": 1e-06,
+      "angular_tolerance_rad": 1e-06,
+      "frame_relation": {
+        "direction_relation": "opposed",
+        "orientation_requirement": "full_frame",
+        "profile_requirement": "none"
+      }
+    }
+  ]
+}

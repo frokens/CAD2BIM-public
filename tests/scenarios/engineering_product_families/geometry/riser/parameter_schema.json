@@ -1,0 +1,23 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["local_bottom_m", "local_top_m", "axis_unit", "frame_x", "height_m", "outer_diameter_m", "section"],
+  "properties": {
+    "local_bottom_m": {"type": "array", "minItems": 3, "maxItems": 3, "items": {"type": "number"}},
+    "local_top_m": {"type": "array", "minItems": 3, "maxItems": 3, "items": {"type": "number"}},
+    "axis_unit": {"type": "array", "minItems": 3, "maxItems": 3, "items": {"type": "number"}},
+    "frame_x": {"type": "array", "minItems": 3, "maxItems": 3, "items": {"type": "number"}},
+    "height_m": {"type": "number", "exclusiveMinimum": 0},
+    "outer_diameter_m": {"type": "number", "exclusiveMinimum": 0},
+    "section": {
+      "type": "object", "additionalProperties": false,
+      "required": ["known_wall_thickness_m"],
+      "properties": {
+        "known_wall_thickness_m": {
+          "type": "array", "minItems": 0, "maxItems": 1,
+          "items": {"type": "number", "exclusiveMinimum": 0}
+        }
+      }
+    }
+  }
+}

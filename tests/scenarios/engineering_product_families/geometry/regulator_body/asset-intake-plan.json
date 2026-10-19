@@ -1,0 +1,54 @@
+{
+  "status": "first_batch_candidate_no_publication",
+  "owner": "GeometryResourceService.import_mapped_asset",
+  "scope_kind": "task",
+  "scope_requirement": "same tenant_id and task_id as REGULATOR Family authoring invocation",
+  "source_name": "regulator_body_closed.brep",
+  "source_path": "tests/scenarios/engineering_product_families/assets/mapped_geometry/regulator_body/regulator_body_closed.brep",
+  "source_sha256": "a3f7d38bd392f96d5bd5ad174b9986036d583cda3218b567a10b3db459eb5171",
+  "source_bytes": 148173,
+  "normalization": {
+    "format": "occt_brep_v1",
+    "source_format": "occt_brep",
+    "unit": "METRE",
+    "transform": null,
+    "include_summary": true
+  },
+  "source_documents": [
+    "geometry/regulator_body/provenance.json",
+    "geometry/regulator_body/usage.md"
+  ],
+  "intake_result_to_verify": [
+    "exact TASK owner and mapped_model kind",
+    "canonical BREP normalization and independent reopening",
+    "source bundle retains exact BREP and source documents",
+    "immutable asset/database readback and exact version reference"
+  ],
+  "intake_operation_semantics": "backend_import has no geometry-authoring CriticalOperation",
+  "annotation": {
+    "owner": "GeometryAuthoringService.annotate_interfaces",
+    "target_kind": "same_task_root",
+    "interfaces": [
+      {
+        "interface_key": "geometric_left_disk",
+        "local_frame": {
+          "translation_m": [-0.8937003968253989, 0.0, 0.0],
+          "rotation": [[0.0, -1.0, 0.0], [-1.0, 0.0, 0.0], [0.0, 0.0, -1.0]]
+        },
+        "profile": {"kind": "circular", "diameter_m": 0.15}
+      },
+      {
+        "interface_key": "geometric_right_disk",
+        "local_frame": {
+          "translation_m": [0.8937003968253989, 0.0, 0.0],
+          "rotation": [[0.0, -1.0, 0.0], [-1.0, 0.0, 0.0], [0.0, 0.0, -1.0]]
+        },
+        "profile": {"kind": "circular", "diameter_m": 0.15}
+      }
+    ],
+    "interface_source": "provenance.json measured disk centers, outward -Z, declared source-plane local -Y reference, outer diameter .15 m",
+    "usage_instructions_path": "geometry/regulator_body/usage.md",
+    "result_to_verify": "new exact mapped version on the same root with unchanged canonical/source bytes and geometry-resource-write Operation"
+  },
+  "family_binding": "bind annotated body exact and the selected shared curved_two_port v3 exact in the same invocation Scope; no implicit latest"
+}

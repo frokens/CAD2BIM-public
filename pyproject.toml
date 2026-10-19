@@ -1,0 +1,122 @@
+[project]
+name = "cad2bim"
+version = "0.1.0"
+description = "CAD/Data Packages with a durable IFC backend and local Direct MCP"
+readme = "README.md"
+requires-python = ">=3.11,<3.12"
+dependencies = [
+    "alembic>=1.14.0",
+    "beautifulsoup4>=4.15.0,<5.0",
+    "cadquery>=2.8.0,<2.9.0",
+    "cryptography>=44.0.3",
+    "deepagents==0.6.12",
+    "duckdb>=1.4.0,<2.0.0",
+    "ezdxf>=1.4.2",
+    "fastapi>=0.128.0",
+    "fastmcp>=3.2.0",
+    "google>=3.0.0",
+    "google-genai>=1.28.0",
+    "google-generativeai>=0.8.5",
+    "greenlet>=3.1.0",
+    "httpx[socks]>=0.28.1",
+    "ifcopenshell>=0.8.2",
+    "ipykernel>=7.2.0",
+    "jsonschema>=4.26.0",
+    "jupyterlab>=4.5.5",
+    "langchain>=1.2.10",
+    "langchain-community>=0.3.25",
+    "langchain-core==1.4.9",
+    "langchain-deepseek>=1.0.1",
+    "langchain-mcp-adapters>=0.2.1",
+    "langchain-openai>=1.3.5",
+    "langgraph==1.2.9",
+    "langgraph-checkpoint-postgres>=3.0.5",
+    "langgraph-checkpoint-sqlite>=2.0.10",
+    "langgraph-cli[inmem]>=0.3.3",
+    "langgraph-prebuilt>=0.2.2",
+    "langgraph-sdk>=0.1.70",
+    "langsmith>=0.3.45",
+    "loguru>=0.7.3",
+    "markdown>=3.9",
+    "mcp[cli]>=1.12.0",
+    "networkx>=3.4,<4.0",
+    "nltk>=3.9.1",
+    "notebook>=7.4.3",
+    "numpy>=2.2.0,<2.3.0",
+    "openai>=2.45.0,<3.0",
+    "pandas>=2.3.0",
+    "pillow>=11.0.0",
+    "polars>=1.30,<2.0",
+    "psutil>=7.0.0",
+    "psycopg-pool>=3.3.0",
+    "psycopg[binary]>=3.3.3",
+    "pyarrow>=21.0.0",
+    "pydantic>=2.11.7",
+    "pyproj>=3.7,<4.0",
+    "pyjwt>=2.10.1",
+    "python-dotenv>=1.2.2",
+    "python-multipart>=0.0.32",
+    "pyvista>=0.46.0",
+    "rapidfuzz>=3.10,<4.0",
+    "rfc8785>=0.1.4,<0.2",
+    "RestrictedPython==8.5",
+    "scipy>=1.15,<2.0",
+    "shapely>=2.0,<3.0",
+    "sqlalchemy>=2.0.44",
+    "tavily-python>=0.7.7",
+    "textum==0.3.0",
+    "tqdm>=4.67.1",
+    "trustcall>=0.0.39",
+    "uvicorn>=0.38.0",
+    "wikipedia>=1.4.0",
+    "xlrd>=2.0.1",
+    "xlsxwriter>=3.2.5",
+]
+
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project.scripts]
+cad2bim-mcp-direct = "CAD2BIM_mcp.direct.entry:cli"
+cad2bim-mcp-runner = "CAD2BIM_mcp.runner.server:cli"
+cad2bim-checkpointer-setup = "CAD2BIM_backend.infrastructure.langgraph.setup:cli"
+cad2bim-db-runtime-roles = "CAD2BIM_backend.infrastructure.postgres.runtime_roles:cli"
+cad2bim-system-geometry-seed = "CAD2BIM_backend.infrastructure.geometry_seed.cli:cli"
+cad2bim-chatgpt = "CAD2BIM_backend.infrastructure.chatgpt_cli:cli"
+cad2bim-component = "CAD2BIM_backend.infrastructure.component_demo:cli"
+
+[project.optional-dependencies]
+dev = [
+    "build>=1.2",
+    "pytest>=8.0",
+    "pytest-asyncio>=0.23",
+    "pytest-timeout>=2.3",
+    "ruff>=0.9",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["CAD2BIM_backend*", "CAD2BIM_mcp*"]
+
+[tool.setuptools.package-data]
+"CAD2BIM_backend.infrastructure.postgres.migrations" = ["script.py.mako"]
+"CAD2BIM_backend.infrastructure.geometry_seed.resources" = ["manifest.json"]
+"CAD2BIM_backend.infrastructure.chatgpt_auth" = ["*.ts", "package*.json", "vendor/*", "vendor/local/*.ts"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
+addopts = "--strict-config --strict-markers -m 'not benchmark and not integration and not e2e and not live and not network'"
+asyncio_mode = "auto"
+markers = [
+    "benchmark: performance and scaling tests excluded from the default suite",
+    "integration: tests requiring multiple real adapters or services",
+    "e2e: full-system tests",
+    "live: tests requiring network access or a real model/provider",
+    "network: tests explicitly permitted to access the network",
+]
+
+[tool.ruff]
+target-version = "py311"
+line-length = 100

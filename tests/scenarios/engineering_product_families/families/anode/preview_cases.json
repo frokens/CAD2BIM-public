@@ -1,0 +1,267 @@
+{
+  "cases": {
+    "items": [
+      {
+        "case_kind": "family",
+        "case_key": "standard_nominal",
+        "invocation": {
+          "realization_kind": "standard_model",
+          "product_origin": [
+            0,
+            0,
+            0
+          ],
+          "length_unit": {},
+          "public_parameters": {
+            "host_a_m": [
+              -2,
+              0,
+              0
+            ],
+            "host_b_m": [
+              2,
+              0,
+              0
+            ],
+            "host_outer_diameter_m": 0.2,
+            "attachment_station_m": 0
+          }
+        },
+        "expectation": {
+          "expected_status": "SOLVED"
+        }
+      },
+      {
+        "case_kind": "family",
+        "case_key": "standard_placed",
+        "invocation": {
+          "realization_kind": "standard_model",
+          "product_origin": [
+            7,
+            -5,
+            2
+          ],
+          "length_unit": {},
+          "public_parameters": {
+            "host_a_m": [
+              -2,
+              0,
+              0
+            ],
+            "host_b_m": [
+              2,
+              0,
+              0
+            ],
+            "host_outer_diameter_m": 0.2,
+            "attachment_station_m": 0
+          }
+        },
+        "expectation": {
+          "expected_status": "SOLVED"
+        }
+      },
+      {
+        "case_kind": "family",
+        "case_key": "a1_horizontal",
+        "invocation": {
+          "realization_kind": "self_geometry",
+          "product_origin": [
+            0,
+            0,
+            0
+          ],
+          "length_unit": {},
+          "public_parameters": {
+            "host_a_m": [
+              -2,
+              0,
+              0
+            ],
+            "host_b_m": [
+              2,
+              0,
+              0
+            ],
+            "host_outer_diameter_m": 0.2,
+            "attachment_station_m": 0
+          },
+          "external_constraints": [
+            {
+              "interface_key": "business_attachment",
+              "source_kind": "design_target",
+              "condition": {
+                "kind": "fixed_point",
+                "point_m": [
+                  -2,
+                  0,
+                  0.1
+                ],
+                "axis": [
+                  0,
+                  0,
+                  -1
+                ],
+                "direction_relation": "same",
+                "position_tolerance_m": 1e-06,
+                "angular_tolerance_rad": 1e-06
+              }
+            }
+          ]
+        },
+        "expectation": {
+          "expected_status": "SOLVED"
+        }
+      },
+      {
+        "case_kind": "family",
+        "case_key": "a2_vertical_placed",
+        "invocation": {
+          "realization_kind": "self_geometry",
+          "product_origin": [
+            8,
+            2,
+            0
+          ],
+          "length_unit": {},
+          "public_parameters": {
+            "host_a_m": [
+              10,
+              3,
+              1
+            ],
+            "host_b_m": [
+              10,
+              3,
+              4
+            ],
+            "host_outer_diameter_m": 0.1,
+            "attachment_station_m": 0
+          },
+          "external_constraints": [
+            {
+              "interface_key": "business_attachment",
+              "source_kind": "design_target",
+              "condition": {
+                "kind": "fixed_point",
+                "point_m": [
+                  10.05,
+                  3,
+                  1
+                ],
+                "axis": [
+                  -1,
+                  0,
+                  0
+                ],
+                "direction_relation": "same",
+                "position_tolerance_m": 1e-06,
+                "angular_tolerance_rad": 1e-06
+              }
+            }
+          ]
+        },
+        "expectation": {
+          "expected_status": "SOLVED"
+        }
+      },
+      {
+        "case_kind": "family",
+        "case_key": "a3_zero_axis",
+        "invocation": {
+          "realization_kind": "self_geometry",
+          "product_origin": [
+            0,
+            0,
+            0
+          ],
+          "length_unit": {},
+          "public_parameters": {
+            "host_a_m": [
+              0,
+              0,
+              0
+            ],
+            "host_b_m": [
+              0,
+              0,
+              0
+            ],
+            "host_outer_diameter_m": 0.1,
+            "attachment_station_m": 0
+          }
+        },
+        "expectation": {
+          "expected_status": "INFEASIBLE",
+          "reason_keys": [
+            "host_axis"
+          ]
+        }
+      },
+      {
+        "case_kind": "family",
+        "case_key": "approved_interior_station_3d",
+        "invocation": {
+          "realization_kind": "self_geometry",
+          "product_origin": [
+            1,
+            -1,
+            2
+          ],
+          "length_unit": {},
+          "public_parameters": {
+            "host_a_m": [
+              0,
+              0,
+              0
+            ],
+            "host_b_m": [
+              2,
+              2,
+              1
+            ],
+            "host_outer_diameter_m": 0.15,
+            "attachment_station_m": 1.5
+          }
+        },
+        "expectation": {
+          "expected_status": "SOLVED"
+        }
+      },
+      {
+        "case_kind": "family",
+        "case_key": "station_outside_host",
+        "invocation": {
+          "realization_kind": "self_geometry",
+          "product_origin": [
+            0,
+            0,
+            0
+          ],
+          "length_unit": {},
+          "public_parameters": {
+            "host_a_m": [
+              0,
+              0,
+              0
+            ],
+            "host_b_m": [
+              1,
+              0,
+              0
+            ],
+            "host_outer_diameter_m": 0.15,
+            "attachment_station_m": 1.1
+          }
+        },
+        "expectation": {
+          "expected_status": "INFEASIBLE",
+          "reason_keys": [
+            "finite_station"
+          ]
+        }
+      }
+    ]
+  },
+  "nominal_scenario_key": "standard_nominal"
+}

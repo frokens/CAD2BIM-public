@@ -1,0 +1,169 @@
+{
+  "product_structure_kind": "single_product",
+  "standard_model": {
+    "public_parameters": {
+      "middle_points_m": [],
+      "section": {
+        "known_wall_thickness_m": []
+      }
+    }
+  },
+  "public_parameters": [
+    {
+      "parameter_kind": "array",
+      "parameter_key": "middle_points_m",
+      "min_items": 0,
+      "max_items": 126,
+      "items": {
+        "parameter_kind": "number_array",
+        "length": 3,
+        "unit": "metre"
+      }
+    },
+    {
+      "parameter_kind": "object",
+      "parameter_key": "section",
+      "properties": [
+        {
+          "parameter_kind": "array",
+          "parameter_key": "known_wall_thickness_m",
+          "min_items": 0,
+          "max_items": 1,
+          "items": {
+            "parameter_kind": "number",
+            "unit": "metre",
+            "minimum": 0
+          }
+        }
+      ]
+    }
+  ],
+  "solved_parameters": [
+    {
+      "parameter_kind": "array",
+      "parameter_key": "local_points_m",
+      "min_items": 2,
+      "max_items": 128,
+      "items": {
+        "parameter_kind": "number_array",
+        "length": 3,
+        "unit": "metre",
+        "minimum": -1.7976931348623157e+308,
+        "maximum": 1.7976931348623157e+308
+      }
+    },
+    {
+      "parameter_kind": "number",
+      "parameter_key": "outer_diameter_m",
+      "unit": "metre",
+      "minimum": 0,
+      "maximum": 1.7976931348623157e+308
+    },
+    {
+      "parameter_kind": "array",
+      "parameter_key": "endpoint_reference_directions",
+      "min_items": 2,
+      "max_items": 2,
+      "items": {
+        "parameter_kind": "number_array",
+        "length": 3,
+        "unit": "dimensionless",
+        "minimum": -1.7976931348623157e+308,
+        "maximum": 1.7976931348623157e+308
+      }
+    }
+  ],
+  "components": [
+    {
+      "component_key": "pipe",
+      "ifc_class": "IfcPipeSegment"
+    }
+  ],
+  "geometry_fragments": [
+    {
+      "fragment_key": "pipe_body",
+      "owner_component_key": "pipe",
+      "local_transform_mode": "program",
+      "binding_options": [
+        {
+          "binding_key": "pipe_body_geometry",
+          "parameter_sources": {
+            "overrides": {
+              "local_points_m": {
+                "source_kind": "solved_parameter",
+                "parameter_key": "local_points_m"
+              },
+              "outer_diameter_m": {
+                "source_kind": "solved_parameter",
+                "parameter_key": "outer_diameter_m"
+              },
+              "section": {
+                "source_kind": "public_parameter",
+                "parameter_key": "section"
+              },
+              "endpoint_reference_directions": {
+                "source_kind": "solved_parameter",
+                "parameter_key": "endpoint_reference_directions"
+              }
+            }
+          },
+          "uniform_scale_source": {
+            "source_kind": "fixed",
+            "value": 1.0
+          }
+        }
+      ]
+    }
+  ],
+  "interfaces": [
+    {
+      "interface_key": "inlet",
+      "owner_component_key": "pipe",
+      "interface_kind": "external",
+      "source": {
+        "source_kind": "model_interface",
+        "fragment_key": "pipe_body",
+        "model_interface_key": "inlet"
+      },
+      "external_constraint": {
+        "required": true,
+        "allowed_kinds": [
+          "fixed_point"
+        ],
+        "allowed_directions": [
+          "same",
+          "opposed"
+        ],
+        "roll_required": false,
+        "profile_required": true,
+        "maximum_position_tolerance_m": 1e-06,
+        "maximum_angular_tolerance_rad": 1e-06
+      }
+    },
+    {
+      "interface_key": "outlet",
+      "owner_component_key": "pipe",
+      "interface_kind": "external",
+      "source": {
+        "source_kind": "model_interface",
+        "fragment_key": "pipe_body",
+        "model_interface_key": "outlet"
+      },
+      "external_constraint": {
+        "required": true,
+        "allowed_kinds": [
+          "fixed_point"
+        ],
+        "allowed_directions": [
+          "same",
+          "opposed"
+        ],
+        "roll_required": false,
+        "profile_required": true,
+        "maximum_position_tolerance_m": 1e-06,
+        "maximum_angular_tolerance_rad": 1e-06
+      }
+    }
+  ],
+  "constraints": []
+}

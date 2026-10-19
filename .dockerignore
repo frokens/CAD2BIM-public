@@ -1,0 +1,14 @@
+.git
+.gitignore
+.venv
+**/__pycache__
+**/.pytest_cache
+**/node_modules
+**/dist
+artifacts
+logs
+storage
+tests
+docs
+*.pyc
+*.pyo

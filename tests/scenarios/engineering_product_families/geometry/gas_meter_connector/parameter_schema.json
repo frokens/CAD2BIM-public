@@ -1,0 +1,9 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["od_m", "length_m"],
+  "properties": {
+    "od_m": {"type": "number", "exclusiveMinimum": 0},
+    "length_m": {"type": "number", "exclusiveMinimum": 0}
+  }
+}

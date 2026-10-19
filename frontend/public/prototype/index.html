@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="城市燃气管网 CAD 转 IFC 4.3 模型任务" />
+    <title>CAD2BIM Agent · 城市燃气管网建模</title>
+    <link rel="stylesheet" href="./styles.css?20260912-card-sections" />
+  <script src="./public-bootstrap.js"></script>
+<script src="./library-data.js"></script>
+</head>
+  <body>
+    <div class="app-shell" id="appShell">
+      <aside class="sidebar" id="taskNavigation" aria-label="任务导航">
+        <div class="brand">
+          <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span>
+          <strong>CAD2BIM</strong>
+          <button class="icon-button task-navigation-close" type="button" data-action="close-task-navigation" aria-label="关闭任务导航">×</button>
+        </div>
+        <details class="new-task-picker" id="taskTypePicker">
+          <summary class="new-task"><span aria-hidden="true">＋</span> 新建任务</summary>
+          <div class="task-type-menu" role="group" aria-label="选择任务类型">
+            <button type="button" data-action="new-task" data-task-type="cad2bim" disabled>CAD2BIM（暂未开放）</button>
+            <button type="button" data-action="new-task" data-task-type="component">Component</button>
+          </div>
+        </details>
+        <nav class="primary-nav" aria-label="主导航">
+          <button class="nav-item is-active" type="button" data-action="open-workspace"><span aria-hidden="true">◫</span> Agent 工作台</button>
+          <button class="nav-item" type="button" data-action="open-library"><span aria-hidden="true">◇</span> 几何与产品族</button>
+        </nav>
+        <div class="sidebar-task-groups">
+        <div class="sidebar-section">
+          <p>最近任务</p>
+
+
+
+
+
+
+        </div>
+        </div>
+      </aside>
+      <button class="task-navigation-backdrop" type="button" data-action="close-task-navigation" aria-label="关闭任务导航"></button>
+
+      <main class="workspace">
+        <header class="topbar">
+          <div class="topbar-title"><button class="icon-button task-navigation-toggle" type="button" data-action="toggle-task-navigation" aria-label="打开任务导航" aria-controls="taskNavigation" aria-expanded="false">☰</button><h1>CAD2BIM 工作台</h1></div>
+          <div class="topbar-actions"><button class="text-button" type="button" data-action="toggle-dialogue">展开对话</button><span class="replay-speed" id="replaySpeed" role="group" aria-label="回放速度" hidden><button type="button" data-replay-speed="1">1×</button><button class="is-active" type="button" data-replay-speed="16">4×</button><button type="button" data-replay-speed="64">16×</button></span><button class="text-button" type="button" data-action="replay">↻ 回放</button><button class="text-button" type="button" data-action="exit-replay" hidden>退出回放</button><button class="icon-button" type="button" data-action="toggle-inspector" aria-label="打开任务概览">☷</button></div>
+          <button class="text-button library-return" type="button" data-action="open-workspace">返回对话</button>
+        </header>
+
+        <div class="work-area">
+          <section class="library-view" aria-label="几何与产品族"><iframe id="libraryFrame" title="几何与产品族资源" data-src="./library.html?embedded=1&amp;v=20260912-card-sections"></iframe></section>
+          <section class="conversation" aria-label="任务对话">
+            <nav class="stage-strip" id="phaseStrip" aria-label="任务进度"></nav>
+            <div class="conversation-scroll" id="conversationScroll" tabindex="0">
+              <div class="conversation-inner" id="conversationStart">
+                <div class="conversation-end" aria-hidden="true"></div>
+              </div>
+              <div class="conversation-inner new-task-view" id="newTaskView" hidden>
+                <div class="conversation-end" aria-hidden="true"></div>
+              </div>
+            </div>
+            <footer class="composer" aria-label="发送消息">
+              <button class="replay-jump" id="replayJump" type="button" data-action="replay-jump" aria-label="跳到最新" title="跳到最新" hidden><i></i><i></i><i></i></button>
+              <div class="composer-box">
+                <div class="composer-attachments" id="composerAttachments" hidden></div>
+                <textarea id="messageInput" rows="2" placeholder="可以随时输入补充说明或修改意见…"></textarea>
+                <div class="composer-actions">
+                  <button class="attachment-button" type="button" id="attachmentButton" data-action="attach-file" aria-label="添加图片或 CAD 文件" title="添加图片或 CAD 文件" hidden>＋</button>
+                  <input id="composerFile" type="file" accept="image/*,.dxf,.dwg" multiple hidden />
+                  <span id="composerHint">⌘ / Ctrl + Enter 提交</span>
+                  <button class="composer-icon-action" type="button" id="taskPauseButton" data-action="pause-task" aria-label="暂停任务" title="暂停任务" hidden><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="7" y="7" width="10" height="10" rx="1" fill="currentColor"/></svg></button>
+                  <button class="secondary-action" type="button" data-action="submit-feedback" disabled>提交修改意见</button>
+                  <button class="primary-action" type="button" data-action="confirm" hidden>确认并继续</button>
+                </div>
+              </div>
+            </footer>
+          </section>
+
+          <aside class="inspector" id="inspector" aria-label="任务概览" aria-hidden="true">
+            <div class="inspector-resizer" id="inspectorResizer" role="separator" aria-label="调整任务概览宽度" tabindex="0"></div>
+            <header><div class="inspector-heading"><p class="eyebrow" id="inspectorKind"></p><h2 id="inspectorTitle" tabindex="-1"></h2></div><button class="icon-button" type="button" id="inspectorClose" data-action="close-inspector" aria-label="关闭右侧栏">×</button></header>
+            <div class="inspector-scroll" id="inspectorContent"></div>
+            <article class="inspector-detail document-body" id="inspectorDetail" hidden></article>
+          </aside>
+        </div>
+      </main>
+    </div>
+
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+    <dialog class="task-delete-dialog" id="taskDeleteDialog" aria-labelledby="taskDeleteTitle" aria-describedby="taskDeleteDescription">
+      <header class="task-delete-heading">
+        <span class="task-delete-symbol" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h16M9 7V4h6v3M6 7l1 13h10l1-13M10 11v5M14 11v5"/></svg></span>
+        <button class="icon-button" type="button" data-action="cancel-task-delete" aria-label="关闭删除确认">×</button>
+      </header>
+      <h2 id="taskDeleteTitle">删除这个任务？</h2>
+      <p class="task-delete-name" id="taskDeleteName"></p>
+      <p id="taskDeleteDescription">删除后，该任务及其对话将从任务列表移除，无法继续操作。</p>
+      <p class="task-delete-retained"><span aria-hidden="true">◇</span> 已发布的团队共享几何与产品族仍会保留。</p>
+      <p class="task-delete-error" id="taskDeleteError" role="alert" hidden></p>
+      <footer class="task-delete-actions">
+        <button class="task-delete-cancel" type="button" data-action="cancel-task-delete" autofocus>取消</button>
+        <button class="task-delete-confirm" id="taskDeleteConfirm" type="button" data-action="confirm-task-delete">删除任务</button>
+      </footer>
+    </dialog>
+
+    <dialog class="viewer-dialog" id="modelDialog">
+      <div class="dialog-shell">
+        <header><div><p class="eyebrow">模型查看</p><h2 id="modelDialogTitle">城市燃气管网 IFC 4.3</h2></div><button class="icon-button" type="button" data-action="close-dialog" aria-label="关闭模型查看">×</button></header>
+        <div class="viewer-canvas">
+          <img src="./assets/model/network-overview.webp" alt="城市燃气管网模型视图" />
+          <div class="viewer-tools"><button type="button" aria-label="适应视图">⌂</button><button type="button" aria-label="旋转视图">↻</button><button type="button" aria-label="放大">＋</button><button type="button" aria-label="缩小">−</button></div>
+          <div class="viewer-mode" role="group" aria-label="模型显示内容"><button class="is-active" type="button" data-view-mode="model" aria-pressed="true">模型</button><button type="button" data-view-mode="ports" aria-pressed="false">端口</button><button type="button" data-view-mode="systems" aria-pressed="false">系统</button></div>
+          <div class="port-layer" aria-hidden="true"><span style="--x:24%;--y:55%">A 侧接口</span><span style="--x:41%;--y:43%">连接</span><span style="--x:58%;--y:52%">B 侧接口</span><span style="--x:70%;--y:35%">支路接口</span><span style="--x:79%;--y:61%">连接</span></div>
+          <div class="system-legend" aria-hidden="true"><span><i></i>中压 A</span><span><i></i>中压 B</span><span><i></i>低压</span><span><i></i>未知压力</span></div>
+          <div class="viewer-caption"><strong>城市燃气管网</strong><span>IFC 4.3 · 最终修订</span></div>
+        </div>
+      </div>
+    </dialog>
+
+    <dialog class="viewer-dialog data-dialog" id="dataDialog">
+      <div class="dialog-shell">
+        <header><div><p class="eyebrow">数据成果</p><h2 id="dataDialogTitle">数据内容</h2></div><button class="icon-button" type="button" data-action="close-dialog" aria-label="关闭数据成果">×</button></header>
+        <article class="data-dialog-body" id="dataDialogContent"></article>
+      </div>
+    </dialog>
+
+
+
+
+
+
+
+
+
+
+
+    <script src="./ifc-plan-state.js?20260911-planner-contract"></script>
+
+
+
+    <script src="./replay-runtime.js?20260911-planner-contract"></script>
+    <script src="./vendor/marked/marked.umd.js?v=20260912-card-markdown"></script>
+    <script src="./task-input.js"></script>
+    <script src="./app.js?20260912-card-sections"></script>
+    <script src="./task-connection.js"></script>
+  </body>
+</html>

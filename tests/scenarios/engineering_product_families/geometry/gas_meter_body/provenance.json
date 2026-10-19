@@ -1,0 +1,18 @@
+{
+  "status": "middle_port_first_batch_unregistered_candidate",
+  "selected_historical_family": {"version_no": 4, "operation_alias": "op_122", "content_digest": "0d4c85a84787d4a2631ed0b4c3e163bdb8132e7ad7f3ad414eb3e68c4f72835f", "contract_digest": "1a226c207782f659759358d14f82afca01e1df27776a1d801949d8813659ff13"},
+  "selected_historical_body": {"version_no": 4, "operation_alias": "op_121", "resource_kind": "mapped_model", "canonical_sha256": "19f60010a9eaf6c37e43bfc186f2b9f69e7cd69340cb11ed34cbb3d3ac450a1c", "canonical_bytes": 628211},
+  "canonical_candidate_path": "tmp/family-target-rebuild-20260923/execution/gas-meter-authoring/middle-port-source-freeze/body-v4-canonical.brep",
+  "original_canonical_path": "/home/example/代码/CAD2BIM-experiments/engineering-family-full-build-20260916/execution/representative-meter/geometry/19f60010a9eaf6c37e43bfc186f2b9f69e7cd69340cb11ed34cbb3d3ac450a1c.brep",
+  "creation_main_path": "tmp/family-target-rebuild-20260923/execution/gas-meter-authoring/middle-port-source-freeze/body-v4-creation-main.py",
+  "creation_main_sha256": "d7530652f475bf3ce47a8b3bba7471dee8ac9c478c50b43fd8738f3b7694472a",
+  "unit": "METRE",
+  "independent_reopen": {"valid": true, "solid_count": 96, "face_count": 704, "minimum_m": [-0.2000001, -0.158, -0.1], "maximum_m": [0.2000001, 0.1300001, 0.401]},
+  "design_datum_m": [0, 0, 0.14],
+  "left_attachment_m": [-0.2, 0, 0.14],
+  "right_attachment_m": [0.2, 0, 0.14],
+  "interface_authority": "selected v4 exact public annotation after intentional annotate_interfaces revision; creation main.py embedded annotations remain z=0 and do not override published v4",
+  "historical_standard_model": {"path": "tmp/family-target-rebuild-20260923/execution/gas-meter-authoring/middle-port-source-freeze/family-v4-standard.brep", "sha256": "2b869ae14842d40c5aa97a5b839987452649a58a1c72e02ba6ebdf071d53d24e"},
+  "excluded_golden_candidate_sha256": "78a0a3aa14a22d57315d3ced258d0263f0ce481710dd1b45f4c83d164b278fe9",
+  "flow_limit": "The three body frames are datum and internal assembly frames, not three gas ports; no through passage, seal or metrology is modeled."
+}

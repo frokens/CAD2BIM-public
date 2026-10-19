@@ -1,0 +1,267 @@
+{
+  "cases": {
+    "items": [
+      {
+        "case_kind": "family",
+        "case_key": "standard_nominal",
+        "invocation": {
+          "realization_kind": "standard_model",
+          "product_origin": [
+            0,
+            0,
+            0
+          ],
+          "length_unit": {},
+          "public_parameters": {}
+        },
+        "expectation": {
+          "expected_status": "SOLVED"
+        }
+      },
+      {
+        "case_kind": "family",
+        "case_key": "standard_placed",
+        "invocation": {
+          "realization_kind": "standard_model",
+          "product_origin": [
+            1.25,
+            -2.5,
+            0.75
+          ],
+          "length_unit": {},
+          "public_parameters": {}
+        },
+        "expectation": {
+          "expected_status": "SOLVED"
+        }
+      },
+      {
+        "case_kind": "family",
+        "case_key": "m1_middle_port",
+        "invocation": {
+          "realization_kind": "self_geometry",
+          "product_origin": [
+            0,
+            0,
+            0
+          ],
+          "length_unit": {},
+          "public_parameters": {},
+          "external_constraints": [
+            {
+              "interface_key": "gas_left",
+              "condition": {
+                "kind": "finite_segment",
+                "start_m": [
+                  0,
+                  0,
+                  0
+                ],
+                "end_m": [
+                  -2,
+                  0,
+                  0
+                ],
+                "outer_diameter_m": 0.2,
+                "direction_relation": "same"
+              }
+            },
+            {
+              "interface_key": "gas_right",
+              "condition": {
+                "kind": "finite_segment",
+                "start_m": [
+                  0,
+                  0,
+                  0
+                ],
+                "end_m": [
+                  2,
+                  0,
+                  0
+                ],
+                "outer_diameter_m": 0.2,
+                "direction_relation": "same"
+              }
+            }
+          ]
+        },
+        "expectation": {
+          "expected_status": "SOLVED"
+        }
+      },
+      {
+        "case_kind": "family",
+        "case_key": "m2_short_separated_mixed_od",
+        "invocation": {
+          "realization_kind": "self_geometry",
+          "product_origin": [
+            1.25,
+            -2.5,
+            0.75
+          ],
+          "length_unit": {},
+          "public_parameters": {},
+          "external_constraints": [
+            {
+              "interface_key": "gas_left",
+              "condition": {
+                "kind": "finite_segment",
+                "start_m": [
+                  -0.8,
+                  0,
+                  0
+                ],
+                "end_m": [
+                  -0.9,
+                  0,
+                  0
+                ],
+                "outer_diameter_m": 0.063,
+                "direction_relation": "same"
+              }
+            },
+            {
+              "interface_key": "gas_right",
+              "condition": {
+                "kind": "finite_segment",
+                "start_m": [
+                  0.2,
+                  0,
+                  0
+                ],
+                "end_m": [
+                  0.25,
+                  0,
+                  0
+                ],
+                "outer_diameter_m": 0.1,
+                "direction_relation": "same"
+              }
+            }
+          ]
+        },
+        "expectation": {
+          "expected_status": "SOLVED"
+        }
+      },
+      {
+        "case_kind": "family",
+        "case_key": "m3_unsupported_30_degree",
+        "invocation": {
+          "realization_kind": "self_geometry",
+          "product_origin": [
+            0,
+            0,
+            0
+          ],
+          "length_unit": {},
+          "public_parameters": {},
+          "external_constraints": [
+            {
+              "interface_key": "gas_left",
+              "condition": {
+                "kind": "finite_segment",
+                "start_m": [
+                  0,
+                  0,
+                  0
+                ],
+                "end_m": [
+                  -2,
+                  0,
+                  0
+                ],
+                "outer_diameter_m": 0.1,
+                "direction_relation": "same"
+              }
+            },
+            {
+              "interface_key": "gas_right",
+              "condition": {
+                "kind": "finite_segment",
+                "start_m": [
+                  0,
+                  0,
+                  0
+                ],
+                "end_m": [
+                  1.7320508075688772,
+                  1,
+                  0
+                ],
+                "outer_diameter_m": 0.1,
+                "direction_relation": "same"
+              }
+            }
+          ]
+        },
+        "expectation": {
+          "expected_status": "INFEASIBLE",
+          "reason_keys": [
+            "unsupported_axis"
+          ]
+        }
+      },
+      {
+        "case_kind": "family",
+        "case_key": "true_short_window",
+        "invocation": {
+          "realization_kind": "self_geometry",
+          "product_origin": [
+            0,
+            0,
+            0
+          ],
+          "length_unit": {},
+          "public_parameters": {},
+          "external_constraints": [
+            {
+              "interface_key": "gas_left",
+              "condition": {
+                "kind": "finite_segment",
+                "start_m": [
+                  -0.2,
+                  0,
+                  0
+                ],
+                "end_m": [
+                  -0.21,
+                  0,
+                  0
+                ],
+                "outer_diameter_m": 0.2,
+                "direction_relation": "same"
+              }
+            },
+            {
+              "interface_key": "gas_right",
+              "condition": {
+                "kind": "finite_segment",
+                "start_m": [
+                  0.2,
+                  0,
+                  0
+                ],
+                "end_m": [
+                  0.21,
+                  0,
+                  0
+                ],
+                "outer_diameter_m": 0.2,
+                "direction_relation": "same"
+              }
+            }
+          ]
+        },
+        "expectation": {
+          "expected_status": "INFEASIBLE",
+          "reason_keys": [
+            "finite_window"
+          ]
+        }
+      }
+    ]
+  },
+  "nominal_scenario_key": "standard_nominal"
+}

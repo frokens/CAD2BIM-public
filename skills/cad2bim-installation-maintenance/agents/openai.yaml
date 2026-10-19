@@ -1,0 +1,4 @@
+interface:
+  display_name: "CAD2BIM 模型安装与维护"
+  short_description: "使用已发布产品族管理模型安装、管道关联、局部调整、冲突与保存后检查"
+  default_prompt: "使用 $cad2bim-installation-maintenance，根据设计与当前 IFC 完成安装或维护，管理受影响对象关系，核查保存结果并说明未决范围。"

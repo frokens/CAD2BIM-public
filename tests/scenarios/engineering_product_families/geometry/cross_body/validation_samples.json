@@ -1,0 +1,236 @@
+[
+  {
+    "local_center_m": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "chamber_radius_m": 0.34,
+    "chamber_wall_m": 0.02,
+    "seam_allowance_m": 0.02,
+    "side_a_local_port_m": [
+      -0.44999999999999996,
+      0.0,
+      0.0
+    ],
+    "side_a_outward_axis": [
+      -1.0,
+      0.0,
+      0.0
+    ],
+    "side_a_reference_axis": [
+      0.0,
+      0.0,
+      1.0
+    ],
+    "side_a_outer_diameter_m": 0.3,
+    "side_a_wall_m": 0.012,
+    "side_b_local_port_m": [
+      0.44999999999999996,
+      0.0,
+      0.0
+    ],
+    "side_b_outward_axis": [
+      1.0,
+      0.0,
+      0.0
+    ],
+    "side_b_reference_axis": [
+      0.0,
+      0.0,
+      1.0
+    ],
+    "side_b_outer_diameter_m": 0.3,
+    "side_b_wall_m": 0.012,
+    "side_c_local_port_m": [
+      0.0,
+      -0.75,
+      0.0
+    ],
+    "side_c_outward_axis": [
+      0.0,
+      -1.0,
+      0.0
+    ],
+    "side_c_reference_axis": [
+      0.0,
+      0.0,
+      1.0
+    ],
+    "side_c_outer_diameter_m": 0.5,
+    "side_c_wall_m": 0.016,
+    "side_d_local_port_m": [
+      0.0,
+      0.75,
+      0.0
+    ],
+    "side_d_outward_axis": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "side_d_reference_axis": [
+      0.0,
+      0.0,
+      1.0
+    ],
+    "side_d_outer_diameter_m": 0.5,
+    "side_d_wall_m": 0.016
+  },
+  {
+    "local_center_m": [
+      2.0,
+      1.0,
+      1.0
+    ],
+    "chamber_radius_m": 0.14237098714129803,
+    "chamber_wall_m": 0.008,
+    "seam_allowance_m": 0.008,
+    "side_a_local_port_m": [
+      2.3000000000000007,
+      1.0,
+      1.0
+    ],
+    "side_a_outward_axis": [
+      1.0,
+      0.0,
+      0.0
+    ],
+    "side_a_reference_axis": [
+      0.0,
+      0.0,
+      1.0
+    ],
+    "side_a_outer_diameter_m": 0.2,
+    "side_a_wall_m": 0.0064,
+    "side_b_local_port_m": [
+      2.0196100421182237,
+      1.224143807070643,
+      1.0
+    ],
+    "side_b_outward_axis": [
+      0.08715574274765814,
+      0.9961946980917455,
+      0.0
+    ],
+    "side_b_reference_axis": [
+      0.0,
+      0.0,
+      1.0
+    ],
+    "side_b_outer_diameter_m": 0.15,
+    "side_b_wall_m": 0.006,
+    "side_c_local_port_m": [
+      1.8499999999999996,
+      1.0,
+      1.0
+    ],
+    "side_c_outward_axis": [
+      -1.0,
+      0.0,
+      0.0
+    ],
+    "side_c_reference_axis": [
+      0.0,
+      0.0,
+      1.0
+    ],
+    "side_c_outer_diameter_m": 0.1,
+    "side_c_wall_m": 0.004,
+    "side_d_local_port_m": [
+      2.0,
+      0.7750000000000004,
+      1.0
+    ],
+    "side_d_outward_axis": [
+      0.0,
+      -1.0,
+      0.0
+    ],
+    "side_d_reference_axis": [
+      0.0,
+      0.0,
+      1.0
+    ],
+    "side_d_outer_diameter_m": 0.15,
+    "side_d_wall_m": 0.006
+  },
+  {
+    "local_center_m": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "chamber_radius_m": 0.09580751584056861,
+    "chamber_wall_m": 0.005200000000000001,
+    "seam_allowance_m": 0.005200000000000001,
+    "side_a_local_port_m": [
+      0.15000000000000002,
+      0.0,
+      0.0
+    ],
+    "side_a_outward_axis": [
+      1.0,
+      0.0,
+      0.0
+    ],
+    "side_a_reference_axis": [
+      0.0,
+      0.0,
+      1.0
+    ],
+    "side_a_outer_diameter_m": 0.1,
+    "side_a_wall_m": 0.004,
+    "side_b_local_port_m": [
+      -0.195,
+      0.0,
+      0.0
+    ],
+    "side_b_outward_axis": [
+      -1.0,
+      0.0,
+      0.0
+    ],
+    "side_b_reference_axis": [
+      0.0,
+      0.0,
+      1.0
+    ],
+    "side_b_outer_diameter_m": 0.13,
+    "side_b_wall_m": 0.0041600000000000005,
+    "side_c_local_port_m": [
+      0.0,
+      0.18,
+      0.0
+    ],
+    "side_c_outward_axis": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "side_c_reference_axis": [
+      0.0,
+      0.0,
+      1.0
+    ],
+    "side_c_outer_diameter_m": 0.12,
+    "side_c_wall_m": 0.0041600000000000005,
+    "side_d_local_port_m": [
+      0.0,
+      0.0,
+      0.165
+    ],
+    "side_d_outward_axis": [
+      0.0,
+      0.0,
+      1.0
+    ],
+    "side_d_reference_axis": [
+      1.0,
+      0.0,
+      0.0
+    ],
+    "side_d_outer_diameter_m": 0.11,
+    "side_d_wall_m": 0.0041600000000000005
+  }
+]

@@ -1,0 +1,596 @@
+{
+  "cases": {
+    "items": [
+      {
+        "case_kind": "family",
+        "case_key": "standard_nominal",
+        "invocation": {
+          "realization_kind": "standard_model",
+          "product_origin": [
+            0,
+            0,
+            0
+          ],
+          "length_unit": {},
+          "public_parameters": {}
+        },
+        "expectation": {
+          "expected_status": "SOLVED"
+        }
+      },
+      {
+        "case_kind": "family",
+        "case_key": "standard_placed",
+        "invocation": {
+          "realization_kind": "standard_model",
+          "product_origin": [
+            7,
+            -5,
+            2
+          ],
+          "length_unit": {},
+          "public_parameters": {}
+        },
+        "expectation": {
+          "expected_status": "SOLVED"
+        }
+      },
+      {
+        "case_kind": "family",
+        "case_key": "c1_four_diameter_groups",
+        "invocation": {
+          "realization_kind": "self_geometry",
+          "product_origin": [
+            0,
+            0,
+            0
+          ],
+          "length_unit": {},
+          "public_parameters": {},
+          "external_constraints": [
+            {
+              "interface_key": "side_a",
+              "condition": {
+                "kind": "finite_segment",
+                "start_m": [
+                  0,
+                  0,
+                  0
+                ],
+                "end_m": [
+                  -4,
+                  0,
+                  0
+                ],
+                "outer_diameter_m": 0.3,
+                "direction_relation": "same"
+              }
+            },
+            {
+              "interface_key": "side_b",
+              "condition": {
+                "kind": "finite_segment",
+                "start_m": [
+                  0,
+                  0,
+                  0
+                ],
+                "end_m": [
+                  4,
+                  0,
+                  0
+                ],
+                "outer_diameter_m": 0.3,
+                "direction_relation": "same"
+              }
+            },
+            {
+              "interface_key": "side_c",
+              "condition": {
+                "kind": "finite_segment",
+                "start_m": [
+                  0,
+                  0,
+                  0
+                ],
+                "end_m": [
+                  0,
+                  -4,
+                  0
+                ],
+                "outer_diameter_m": 0.5,
+                "direction_relation": "same"
+              }
+            },
+            {
+              "interface_key": "side_d",
+              "condition": {
+                "kind": "finite_segment",
+                "start_m": [
+                  0,
+                  0,
+                  0
+                ],
+                "end_m": [
+                  0,
+                  4,
+                  0
+                ],
+                "outer_diameter_m": 0.5,
+                "direction_relation": "same"
+              }
+            }
+          ]
+        },
+        "expectation": {
+          "expected_status": "SOLVED"
+        }
+      },
+      {
+        "case_kind": "family",
+        "case_key": "c2_nonorthogonal_placed",
+        "invocation": {
+          "realization_kind": "self_geometry",
+          "product_origin": [
+            10,
+            -9,
+            0
+          ],
+          "length_unit": {},
+          "public_parameters": {},
+          "external_constraints": [
+            {
+              "interface_key": "side_a",
+              "condition": {
+                "kind": "finite_segment",
+                "start_m": [
+                  12,
+                  -8,
+                  1
+                ],
+                "end_m": [
+                  15,
+                  -8,
+                  1
+                ],
+                "outer_diameter_m": 0.2,
+                "direction_relation": "same"
+              }
+            },
+            {
+              "interface_key": "side_b",
+              "condition": {
+                "kind": "finite_segment",
+                "start_m": [
+                  12,
+                  -8,
+                  1
+                ],
+                "end_m": [
+                  12.261467228242974,
+                  -5.011415905724763,
+                  1
+                ],
+                "outer_diameter_m": 0.15,
+                "direction_relation": "same"
+              }
+            },
+            {
+              "interface_key": "side_c",
+              "condition": {
+                "kind": "finite_segment",
+                "start_m": [
+                  12,
+                  -8,
+                  1
+                ],
+                "end_m": [
+                  9,
+                  -8,
+                  1
+                ],
+                "outer_diameter_m": 0.1,
+                "direction_relation": "same"
+              }
+            },
+            {
+              "interface_key": "side_d",
+              "condition": {
+                "kind": "finite_segment",
+                "start_m": [
+                  12,
+                  -8,
+                  1
+                ],
+                "end_m": [
+                  12,
+                  -11,
+                  1
+                ],
+                "outer_diameter_m": 0.15,
+                "direction_relation": "same"
+              }
+            }
+          ]
+        },
+        "expectation": {
+          "expected_status": "SOLVED"
+        }
+      },
+      {
+        "case_kind": "family",
+        "case_key": "c3_coincident_ports",
+        "invocation": {
+          "realization_kind": "self_geometry",
+          "product_origin": [
+            0,
+            0,
+            0
+          ],
+          "length_unit": {},
+          "public_parameters": {},
+          "external_constraints": [
+            {
+              "interface_key": "side_a",
+              "condition": {
+                "kind": "finite_segment",
+                "start_m": [
+                  0,
+                  0,
+                  0
+                ],
+                "end_m": [
+                  4,
+                  0,
+                  0
+                ],
+                "outer_diameter_m": 0.1,
+                "direction_relation": "same"
+              }
+            },
+            {
+              "interface_key": "side_b",
+              "condition": {
+                "kind": "finite_segment",
+                "start_m": [
+                  0,
+                  0,
+                  0
+                ],
+                "end_m": [
+                  4,
+                  0,
+                  0
+                ],
+                "outer_diameter_m": 0.1,
+                "direction_relation": "same"
+              }
+            },
+            {
+              "interface_key": "side_c",
+              "condition": {
+                "kind": "finite_segment",
+                "start_m": [
+                  0,
+                  0,
+                  0
+                ],
+                "end_m": [
+                  -4,
+                  0,
+                  0
+                ],
+                "outer_diameter_m": 0.1,
+                "direction_relation": "same"
+              }
+            },
+            {
+              "interface_key": "side_d",
+              "condition": {
+                "kind": "finite_segment",
+                "start_m": [
+                  0,
+                  0,
+                  0
+                ],
+                "end_m": [
+                  0,
+                  4,
+                  0
+                ],
+                "outer_diameter_m": 0.1,
+                "direction_relation": "same"
+              }
+            }
+          ]
+        },
+        "expectation": {
+          "expected_status": "INFEASIBLE",
+          "reason_keys": [
+            "coincident_ports"
+          ]
+        }
+      },
+      {
+        "case_kind": "family",
+        "case_key": "noncoplanar",
+        "invocation": {
+          "realization_kind": "self_geometry",
+          "product_origin": [
+            0,
+            0,
+            0
+          ],
+          "length_unit": {},
+          "public_parameters": {},
+          "external_constraints": [
+            {
+              "interface_key": "side_a",
+              "condition": {
+                "kind": "finite_segment",
+                "start_m": [
+                  0,
+                  0,
+                  0
+                ],
+                "end_m": [
+                  3,
+                  0,
+                  0
+                ],
+                "outer_diameter_m": 0.1,
+                "direction_relation": "same"
+              }
+            },
+            {
+              "interface_key": "side_b",
+              "condition": {
+                "kind": "finite_segment",
+                "start_m": [
+                  0,
+                  0,
+                  0
+                ],
+                "end_m": [
+                  -3,
+                  0,
+                  0
+                ],
+                "outer_diameter_m": 0.13,
+                "direction_relation": "same"
+              }
+            },
+            {
+              "interface_key": "side_c",
+              "condition": {
+                "kind": "finite_segment",
+                "start_m": [
+                  0,
+                  0,
+                  0
+                ],
+                "end_m": [
+                  0,
+                  3,
+                  0
+                ],
+                "outer_diameter_m": 0.12,
+                "direction_relation": "same"
+              }
+            },
+            {
+              "interface_key": "side_d",
+              "condition": {
+                "kind": "finite_segment",
+                "start_m": [
+                  0,
+                  0,
+                  0
+                ],
+                "end_m": [
+                  0,
+                  0,
+                  3
+                ],
+                "outer_diameter_m": 0.11,
+                "direction_relation": "same"
+              }
+            }
+          ]
+        },
+        "expectation": {
+          "expected_status": "SOLVED"
+        }
+      },
+      {
+        "case_kind": "family",
+        "case_key": "short_window",
+        "invocation": {
+          "realization_kind": "self_geometry",
+          "product_origin": [
+            0,
+            0,
+            0
+          ],
+          "length_unit": {},
+          "public_parameters": {},
+          "external_constraints": [
+            {
+              "interface_key": "side_a",
+              "condition": {
+                "kind": "finite_segment",
+                "start_m": [
+                  0,
+                  0,
+                  0
+                ],
+                "end_m": [
+                  -0.05,
+                  0,
+                  0
+                ],
+                "outer_diameter_m": 0.3,
+                "direction_relation": "same"
+              }
+            },
+            {
+              "interface_key": "side_b",
+              "condition": {
+                "kind": "finite_segment",
+                "start_m": [
+                  0,
+                  0,
+                  0
+                ],
+                "end_m": [
+                  0.05,
+                  0,
+                  0
+                ],
+                "outer_diameter_m": 0.3,
+                "direction_relation": "same"
+              }
+            },
+            {
+              "interface_key": "side_c",
+              "condition": {
+                "kind": "finite_segment",
+                "start_m": [
+                  0,
+                  0,
+                  0
+                ],
+                "end_m": [
+                  0,
+                  -0.05,
+                  0
+                ],
+                "outer_diameter_m": 0.5,
+                "direction_relation": "same"
+              }
+            },
+            {
+              "interface_key": "side_d",
+              "condition": {
+                "kind": "finite_segment",
+                "start_m": [
+                  0,
+                  0,
+                  0
+                ],
+                "end_m": [
+                  0,
+                  0.05,
+                  0
+                ],
+                "outer_diameter_m": 0.5,
+                "direction_relation": "same"
+              }
+            }
+          ]
+        },
+        "expectation": {
+          "expected_status": "INFEASIBLE",
+          "reason_keys": [
+            "no_finite_fit"
+          ]
+        }
+      },
+      {
+        "case_kind": "family",
+        "case_key": "angle_overlap",
+        "invocation": {
+          "realization_kind": "self_geometry",
+          "product_origin": [
+            0,
+            0,
+            0
+          ],
+          "length_unit": {},
+          "public_parameters": {},
+          "external_constraints": [
+            {
+              "interface_key": "side_a",
+              "condition": {
+                "kind": "finite_segment",
+                "start_m": [
+                  0,
+                  0,
+                  0
+                ],
+                "end_m": [
+                  1,
+                  0,
+                  0
+                ],
+                "outer_diameter_m": 0.3,
+                "direction_relation": "same"
+              }
+            },
+            {
+              "interface_key": "side_b",
+              "condition": {
+                "kind": "finite_segment",
+                "start_m": [
+                  0,
+                  0,
+                  0
+                ],
+                "end_m": [
+                  0.9998476951563913,
+                  0.01745240643728351,
+                  0
+                ],
+                "outer_diameter_m": 0.3,
+                "direction_relation": "same"
+              }
+            },
+            {
+              "interface_key": "side_c",
+              "condition": {
+                "kind": "finite_segment",
+                "start_m": [
+                  0,
+                  0,
+                  0
+                ],
+                "end_m": [
+                  -1,
+                  1.2246467991473532e-16,
+                  0
+                ],
+                "outer_diameter_m": 0.3,
+                "direction_relation": "same"
+              }
+            },
+            {
+              "interface_key": "side_d",
+              "condition": {
+                "kind": "finite_segment",
+                "start_m": [
+                  0,
+                  0,
+                  0
+                ],
+                "end_m": [
+                  -1.8369701987210297e-16,
+                  -1,
+                  0
+                ],
+                "outer_diameter_m": 0.3,
+                "direction_relation": "same"
+              }
+            }
+          ]
+        },
+        "expectation": {
+          "expected_status": "INFEASIBLE",
+          "reason_keys": [
+            "opening_overlap"
+          ]
+        }
+      }
+    ]
+  },
+  "nominal_scenario_key": "standard_nominal"
+}

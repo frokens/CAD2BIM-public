@@ -1,0 +1,6 @@
+[
+  {"path":"/lexical/IfcValveType.html","title":"IfcValveType","headings":"Valve type","summary":"A valve type.","text":"A type for a valve."},
+  {"path":"/lexical/IfcValve.html","title":"IfcValve","headings":"Semantic definition","summary":"IfcValve A valve controls or modulates fluid flow.","text":"IfcValve controls or modulates fluid flow."},
+  {"path":"//example.com/IfcValve.html","title":"IfcValve","headings":"","summary":"Unsafe result.","text":"IfcValve"},
+  {"path":"/lexical/IfcValve.html","title":"IfcValve duplicate","headings":"","summary":"Duplicate result.","text":"IfcValve"}
+]

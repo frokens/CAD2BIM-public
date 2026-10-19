@@ -1,0 +1,9 @@
+{
+  "schema": "gas_meter_source_lineage_v1",
+  "standard_nominal": {"left": "approved_synthetic:standard:left", "right": "approved_synthetic:standard:right"},
+  "standard_placed": {"left": "approved_synthetic:standard:left", "right": "approved_synthetic:standard:right"},
+  "m1_middle_port": {"left": "approved_synthetic:M1:left", "right": "approved_synthetic:M1:right"},
+  "m2_short_separated_mixed_od": {"left": "approved_synthetic:M2:left", "right": "approved_synthetic:M2:right"},
+  "m3_unsupported_30_degree": {"left": "approved_synthetic:M3:left", "right": "approved_synthetic:M3:right"},
+  "true_short_window": {"left": "approved_synthetic:short:left", "right": "approved_synthetic:short:right"}
+}

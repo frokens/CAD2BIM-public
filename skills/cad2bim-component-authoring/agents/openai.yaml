@@ -1,0 +1,4 @@
+interface:
+  display_name: "CAD2BIM 几何与产品族编写指南"
+  short_description: "设计几何与产品族，声明接口约束，完成有限预览、局部修订和按需发布"
+  default_prompt: "使用 $cad2bim-component-authoring，根据当前需求创建或修订 Geometry 与产品族，检查接口和必要的 Preview，并按需发布资源。"

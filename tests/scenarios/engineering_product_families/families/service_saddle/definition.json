@@ -1,0 +1,344 @@
+{
+  "product_structure_kind": "single_product",
+  "standard_model": {
+    "public_parameters": {
+      "host_a_m": [
+        -2,
+        0,
+        0
+      ],
+      "host_b_m": [
+        2,
+        0,
+        0
+      ],
+      "host_outer_diameter_m": 0.2
+    }
+  },
+  "public_parameters": [
+    {
+      "parameter_kind": "number_array",
+      "parameter_key": "host_a_m",
+      "length": 3,
+      "unit": "metre",
+      "minimum": -1.7976931348623157e+308,
+      "maximum": 1.7976931348623157e+308
+    },
+    {
+      "parameter_kind": "number_array",
+      "parameter_key": "host_b_m",
+      "length": 3,
+      "unit": "metre",
+      "minimum": -1.7976931348623157e+308,
+      "maximum": 1.7976931348623157e+308
+    },
+    {
+      "parameter_kind": "number",
+      "parameter_key": "host_outer_diameter_m",
+      "unit": "metre",
+      "minimum": 5e-324,
+      "maximum": 1.7976931348623157e+308
+    }
+  ],
+  "solved_parameters": [
+    {
+      "parameter_kind": "number_array",
+      "parameter_key": "local_center_m",
+      "length": 3,
+      "unit": "metre",
+      "minimum": -1.7976931348623157e+308,
+      "maximum": 1.7976931348623157e+308
+    },
+    {
+      "parameter_kind": "object",
+      "parameter_key": "shape",
+      "properties": [
+        {
+          "parameter_kind": "choice",
+          "parameter_key": "mode",
+          "choices": [
+            "detailed"
+          ]
+        },
+        {
+          "parameter_kind": "number",
+          "parameter_key": "collar_half_length_m",
+          "unit": "metre",
+          "minimum": 0,
+          "maximum": 1.7976931348623157e+308
+        },
+        {
+          "parameter_kind": "number",
+          "parameter_key": "branch_port_station_m",
+          "unit": "metre",
+          "minimum": 0,
+          "maximum": 1.7976931348623157e+308
+        }
+      ],
+      "required": false
+    },
+    {
+      "parameter_kind": "choice",
+      "parameter_key": "construction",
+      "choices": [
+        "detailed",
+        "node"
+      ]
+    },
+    {
+      "parameter_kind": "choice",
+      "parameter_key": "default_reason",
+      "choices": [
+        "none",
+        "host_window",
+        "branch_window"
+      ]
+    },
+    {
+      "parameter_kind": "number_array",
+      "parameter_key": "branch_local_direction",
+      "required": false,
+      "length": 3,
+      "unit": "dimensionless",
+      "minimum": -1,
+      "maximum": 1
+    },
+    {
+      "parameter_kind": "number_array",
+      "parameter_key": "branch_local_reference_axis",
+      "required": false,
+      "length": 3,
+      "unit": "dimensionless",
+      "minimum": -1,
+      "maximum": 1
+    },
+    {
+      "parameter_kind": "number",
+      "parameter_key": "radial_fraction",
+      "unit": "dimensionless",
+      "minimum": 0,
+      "maximum": 1
+    },
+    {
+      "parameter_kind": "number",
+      "parameter_key": "host_available_halfwidth_m",
+      "unit": "metre",
+      "minimum": 0,
+      "maximum": 1.7976931348623157e+308
+    },
+    {
+      "parameter_kind": "number",
+      "parameter_key": "sphere_diameter_m",
+      "minimum": 5e-324,
+      "maximum": 1.7976931348623157e+308,
+      "required": false
+    },
+    {
+      "parameter_kind": "array",
+      "parameter_key": "sphere_interfaces",
+      "required": false,
+      "min_items": 2,
+      "max_items": 2,
+      "items": {
+        "parameter_kind": "tagged_object",
+        "discriminator_key": "kind",
+        "branches": [
+          {
+            "parameter_kind": "object",
+            "properties": [
+              {
+                "parameter_kind": "choice",
+                "parameter_key": "kind",
+                "choices": [
+                  "circular"
+                ]
+              },
+              {
+                "parameter_kind": "choice",
+                "parameter_key": "key",
+                "choices": [
+                  "gas_branch"
+                ]
+              },
+              {
+                "parameter_kind": "number_array",
+                "parameter_key": "origin_m",
+                "length": 3,
+                "minimum": -1.7976931348623157e+308,
+                "maximum": 1.7976931348623157e+308
+              },
+              {
+                "parameter_kind": "number_array",
+                "parameter_key": "axis",
+                "length": 3,
+                "minimum": -1.7976931348623157e+308,
+                "maximum": 1.7976931348623157e+308
+              },
+              {
+                "parameter_kind": "number_array",
+                "parameter_key": "reference_direction",
+                "length": 3,
+                "minimum": -1.7976931348623157e+308,
+                "maximum": 1.7976931348623157e+308
+              },
+              {
+                "parameter_kind": "number",
+                "parameter_key": "diameter_m",
+                "minimum": 5e-324,
+                "maximum": 1.7976931348623157e+308
+              }
+            ]
+          },
+          {
+            "parameter_kind": "object",
+            "properties": [
+              {
+                "parameter_kind": "choice",
+                "parameter_key": "kind",
+                "choices": [
+                  "datum"
+                ]
+              },
+              {
+                "parameter_kind": "choice",
+                "parameter_key": "key",
+                "choices": [
+                  "host_datum"
+                ]
+              },
+              {
+                "parameter_kind": "number_array",
+                "parameter_key": "origin_m",
+                "length": 3,
+                "minimum": -1.7976931348623157e+308,
+                "maximum": 1.7976931348623157e+308
+              },
+              {
+                "parameter_kind": "number_array",
+                "parameter_key": "axis",
+                "length": 3,
+                "minimum": -1.7976931348623157e+308,
+                "maximum": 1.7976931348623157e+308
+              },
+              {
+                "parameter_kind": "number_array",
+                "parameter_key": "reference_direction",
+                "length": 3,
+                "minimum": -1.7976931348623157e+308,
+                "maximum": 1.7976931348623157e+308
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "parameter_kind": "number",
+      "parameter_key": "branch_outer_diameter_m",
+      "unit": "metre",
+      "minimum": 5e-324,
+      "maximum": 1.7976931348623157e+308
+    }
+  ],
+  "components": [
+    {
+      "component_key": "saddle",
+      "ifc_class": "IfcPipeFitting"
+    }
+  ],
+  "geometry_fragments": [
+    {
+      "fragment_key": "saddle_body",
+      "owner_component_key": "saddle",
+      "local_transform_mode": "program",
+      "binding_options": [
+        {
+          "binding_key": "service_saddle_geometry",
+          "parameter_sources": {
+            "overrides": {
+              "host_outer_diameter_m": {
+                "source_kind": "public_parameter",
+                "parameter_key": "host_outer_diameter_m"
+              },
+              "branch_outer_diameter_m": {
+                "source_kind": "solved_parameter",
+                "parameter_key": "branch_outer_diameter_m"
+              },
+              "shape": {
+                "source_kind": "solved_parameter",
+                "parameter_key": "shape"
+              },
+              "branch_local_direction": {
+                "source_kind": "solved_parameter",
+                "parameter_key": "branch_local_direction"
+              },
+              "branch_local_reference_axis": {
+                "source_kind": "solved_parameter",
+                "parameter_key": "branch_local_reference_axis"
+              }
+            }
+          },
+          "uniform_scale_source": {
+            "source_kind": "fixed",
+            "value": 1
+          }
+        },
+        {
+          "binding_key": "sphere_geometry",
+          "parameter_sources": {
+            "overrides": {
+              "diameter_m": {
+                "source_kind": "solved_parameter",
+                "parameter_key": "sphere_diameter_m"
+              },
+              "interfaces": {
+                "source_kind": "solved_parameter",
+                "parameter_key": "sphere_interfaces"
+              }
+            }
+          },
+          "uniform_scale_source": {
+            "source_kind": "fixed",
+            "value": 1
+          }
+        }
+      ]
+    }
+  ],
+  "interfaces": [
+    {
+      "interface_key": "host_datum",
+      "owner_component_key": "saddle",
+      "interface_kind": "external",
+      "source": {
+        "source_kind": "model_interface",
+        "fragment_key": "saddle_body",
+        "model_interface_key": "host_datum"
+      }
+    },
+    {
+      "interface_key": "gas_branch",
+      "owner_component_key": "saddle",
+      "interface_kind": "external",
+      "source": {
+        "source_kind": "model_interface",
+        "fragment_key": "saddle_body",
+        "model_interface_key": "gas_branch"
+      },
+      "external_constraint": {
+        "required": true,
+        "allowed_kinds": [
+          "finite_segment"
+        ],
+        "allowed_directions": [
+          "same"
+        ],
+        "roll_required": false,
+        "profile_required": true,
+        "maximum_position_tolerance_m": 1e-06,
+        "maximum_angular_tolerance_rad": 1e-06
+      }
+    }
+  ],
+  "constraints": []
+}

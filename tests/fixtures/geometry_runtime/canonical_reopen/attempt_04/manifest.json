@@ -1,0 +1,40 @@
+{
+  "schema": "cad2bim_geometry_modeling_function_regression_fixture_v1",
+  "source": {
+    "file": "main.py",
+    "sha256": "6f36e256ff2febdb8224378c99c4f2c6899f2e217016d1575aa042867574dfc7",
+    "size_bytes": 2217,
+    "packed_source_bundle_sha256": "4be19b630977783651f83f1abf06aa98060a0a0b44a94cc3a778d5f38f86b39b",
+    "packed_source_bundle_size_bytes": 1021,
+    "source_path_for_provenance_only": "v-fisher/connection-first-luna-preparation/codec-orbit-investigation/extracted/attempt-04/main.py",
+    "source_identity": "connection-first native-r1 failed authoring attempt-04"
+  },
+  "request": {
+    "file": "request.json",
+    "sha256": "676c8707ecc44999a20e915533bbc856f3fb8effd82b9e15f4cc03335a42767e",
+    "size_bytes": 1047,
+    "included_fields": [
+      "parameter_schema",
+      "sample_parameters"
+    ],
+    "excluded_control_or_alias_fields": [],
+    "sample_parameter_sha256": [
+      "d0e730ddf0a4e57dbe56ebb00ffd90c2d4e089259ffc1f0d7ce408f37f6c36f8",
+      "72ab233396f7937f79dd9966444f8e4919fb49957029c8f8f8909b2cfaaa2755"
+    ],
+    "source_path_for_provenance_only": "v-fisher/connection-first-luna-preparation/codec-orbit-investigation/extracted/attempt-04/request.json"
+  },
+  "observed_sample": {
+    "sample_index": 1,
+    "raw_brep_file": "../oblique_boolean_raw.brep",
+    "raw_brep_sha256": "3bfda8db82d9f6aeb0739f40ef339aad4da24e3286feb2b50a2595a448019df1",
+    "host_codec_canonical_sha256": "c2e72a5281a8b80e6b47fa9caa24744167fada12ccf630d81af7e4bf8c60cc96",
+    "superseded_unpublished_experimental_candidate_sha256": "f899ce0d02ec0d4a8299519afa09d94344a852921800de00caede5bd638a70e0"
+  },
+  "provenance": {
+    "database_storage_provider_mcp_accessed_to_create_fixture": false,
+    "copied_from_frozen_controller_extraction": true,
+    "opaque_aliases_included": false,
+    "runtime_boundary_note": "The host codec literal does not assert identical bytes for authoring or product worker serialization boundaries."
+  }
+}

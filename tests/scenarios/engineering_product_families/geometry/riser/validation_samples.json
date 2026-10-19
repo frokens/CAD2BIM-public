@@ -1,0 +1,14 @@
+[
+  {
+    "local_bottom_m": [0, 0, 0], "local_top_m": [0, 0, 0.4],
+    "axis_unit": [0, 0, 1], "frame_x": [1, 0, 0],
+    "height_m": 0.4, "outer_diameter_m": 0.02,
+    "section": {"known_wall_thickness_m": []}
+  },
+  {
+    "local_bottom_m": [3, -1, 1.5], "local_top_m": [4.5, 1, 1.5],
+    "axis_unit": [0.6, 0.8, 0], "frame_x": [0, 0, 1],
+    "height_m": 2.5, "outer_diameter_m": 0.12,
+    "section": {"known_wall_thickness_m": [0.008]}
+  }
+]

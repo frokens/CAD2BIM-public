@@ -1,0 +1,18 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["host_outer_diameter_m", "branch_outer_diameter_m", "shape", "branch_local_direction", "branch_local_reference_axis"],
+  "properties": {
+    "host_outer_diameter_m": {"type": "number", "exclusiveMinimum": 0},
+    "branch_outer_diameter_m": {"type": "number", "exclusiveMinimum": 0},
+    "shape": {"type": "object", "additionalProperties": false,
+      "required": ["mode", "collar_half_length_m", "branch_port_station_m"],
+      "properties": {
+        "mode": {"type": "string", "enum": ["detailed"]},
+        "collar_half_length_m": {"type": "number", "exclusiveMinimum": 0},
+        "branch_port_station_m": {"type": "number", "exclusiveMinimum": 0}
+      }},
+    "branch_local_direction": {"type": "array", "minItems": 3, "maxItems": 3, "items": {"type": "number", "minimum": -1, "maximum": 1}},
+    "branch_local_reference_axis": {"type": "array", "minItems": 3, "maxItems": 3, "items": {"type": "number", "minimum": -1, "maximum": 1}}
+  }
+}

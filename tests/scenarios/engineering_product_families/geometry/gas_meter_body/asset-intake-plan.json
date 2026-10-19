@@ -1,0 +1,24 @@
+{
+  "status": "first_batch_candidate_no_publication",
+  "owner": "GeometryResourceService.import_mapped_asset",
+  "scope_kind": "task",
+  "scope_requirement": "independently establish this TASK tenant_id/task_id before import; never revise the historical alias across Scope",
+  "source_name": "body-v4-canonical.brep",
+  "source_path": "tests/scenarios/engineering_product_families/assets/mapped_geometry/gas_meter_body/body-v4-canonical.brep",
+  "source_sha256": "19f60010a9eaf6c37e43bfc186f2b9f69e7cd69340cb11ed34cbb3d3ac450a1c",
+  "source_bytes": 628211,
+  "normalization": {"format": "occt_brep_v1", "source_format": "occt_brep", "unit": "METRE", "transform": null, "include_summary": true},
+  "source_documents": ["geometry/gas_meter_body/provenance.json", "geometry/gas_meter_body/usage.md"],
+  "annotation": {
+    "owner": "GeometryAuthoringService.annotate_interfaces",
+    "target_kind": "new_same_task_root_after_import",
+    "interfaces": [
+      {"interface_key": "design_datum", "local_frame": {"translation_m": [0, 0, 0.14], "rotation": [[1, 0, 0], [0, 1, 0], [0, 0, 1]]}},
+      {"interface_key": "left_attachment", "local_frame": {"translation_m": [-0.2, 0, 0.14], "rotation": [[0, 0, -1], [0, 1, 0], [1, 0, 0]]}},
+      {"interface_key": "right_attachment", "local_frame": {"translation_m": [0.2, 0, 0.14], "rotation": [[0, 0, 1], [0, -1, 0], [1, 0, 0]]}}
+    ],
+    "interface_source": "historical selected body Geometry v4 exact-info; profile-less datum and two internal assembly frames",
+    "result_to_verify": "new exact annotated version in this TASK with canonical BREP bytes preserved and independent readback"
+  },
+  "family_binding": "new numeric Family binds only this TASK exact annotated body; selected historical alias is provenance, not a cross-Scope input"
+}

@@ -1,0 +1,102 @@
+[
+  {
+    "scenario_key": "vertical_yaw_at_origin",
+    "realization_kind": "self_geometry",
+    "expected_status": "AMBIGUOUS",
+    "product_origin": [
+      0,
+      0,
+      0
+    ],
+    "length_unit": {},
+    "public_parameters": {},
+    "external_constraints": [
+      {
+        "interface_key": "side_a",
+        "condition": {
+          "kind": "finite_segment",
+          "start_m": [
+            0,
+            0,
+            0
+          ],
+          "end_m": [
+            0,
+            0,
+            -4
+          ],
+          "outer_diameter_m": 0.3,
+          "direction_relation": "same"
+        }
+      },
+      {
+        "interface_key": "side_b",
+        "condition": {
+          "kind": "finite_segment",
+          "start_m": [
+            0,
+            0,
+            0
+          ],
+          "end_m": [
+            0,
+            0,
+            4
+          ],
+          "outer_diameter_m": 0.3,
+          "direction_relation": "same"
+        }
+      }
+    ]
+  },
+  {
+    "scenario_key": "vertical_yaw_shifted_origin",
+    "realization_kind": "self_geometry",
+    "expected_status": "AMBIGUOUS",
+    "product_origin": [
+      2,
+      3,
+      4
+    ],
+    "length_unit": {},
+    "public_parameters": {},
+    "external_constraints": [
+      {
+        "interface_key": "side_a",
+        "condition": {
+          "kind": "finite_segment",
+          "start_m": [
+            0,
+            0,
+            0
+          ],
+          "end_m": [
+            0,
+            0,
+            -4
+          ],
+          "outer_diameter_m": 0.3,
+          "direction_relation": "same"
+        }
+      },
+      {
+        "interface_key": "side_b",
+        "condition": {
+          "kind": "finite_segment",
+          "start_m": [
+            0,
+            0,
+            0
+          ],
+          "end_m": [
+            0,
+            0,
+            4
+          ],
+          "outer_diameter_m": 0.3,
+          "direction_relation": "same"
+        }
+      }
+    ]
+  }
+]

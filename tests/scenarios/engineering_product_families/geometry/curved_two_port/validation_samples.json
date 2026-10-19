@@ -1,0 +1,374 @@
+[
+  {
+    "ports": {
+      "side_a": {
+        "origin_m": [
+          -0.012,
+          0,
+          0
+        ],
+        "axis": [
+          -1,
+          0,
+          0
+        ],
+        "reference_direction": [
+          0,
+          0,
+          1
+        ],
+        "outer_diameter_m": 0.02
+      },
+      "side_b": {
+        "origin_m": [
+          0,
+          0,
+          0
+        ],
+        "axis": [
+          1,
+          0,
+          0
+        ],
+        "reference_direction": [
+          0,
+          0,
+          1
+        ],
+        "outer_diameter_m": 0.02
+      }
+    },
+    "shape": {
+      "mode": "straight",
+      "frame_x": [
+        0,
+        0,
+        1
+      ]
+    }
+  },
+  {
+    "ports": {
+      "side_a": {
+        "origin_m": [
+          -0.29223007675795093,
+          0,
+          0
+        ],
+        "axis": [
+          -1,
+          0,
+          0
+        ],
+        "reference_direction": [
+          0,
+          0,
+          1
+        ],
+        "outer_diameter_m": 0.2
+      },
+      "side_b": {
+        "origin_m": [
+          0,
+          0.36556341009128424,
+          0
+        ],
+        "axis": [
+          0,
+          1,
+          0
+        ],
+        "reference_direction": [
+          0,
+          0,
+          1
+        ],
+        "outer_diameter_m": 0.1
+      }
+    },
+    "shape": {
+      "mode": "curved",
+      "frame_x": [
+        0,
+        0,
+        1
+      ],
+      "local_center_m": [
+        0,
+        0,
+        0
+      ],
+      "body_outer_diameter_m": 0.22000000000000003,
+      "turn_radian": 1.5707963267948966,
+      "bend_scale_m": 0.18223007675795092,
+      "arc_radius_m": 0.16400706908215584
+    }
+  },
+  {
+    "ports": {
+      "side_a": {
+        "origin_m": [
+          -0.5752623340102535,
+          0,
+          0
+        ],
+        "axis": [
+          -1,
+          0,
+          0
+        ],
+        "reference_direction": [
+          0,
+          0,
+          1
+        ],
+        "outer_diameter_m": 0.2
+      },
+      "side_b": {
+        "origin_m": [
+          -0.49819179509320843,
+          0.2876311670051268,
+          0
+        ],
+        "axis": [
+          -0.8660254037844387,
+          0.5000000000000001,
+          0
+        ],
+        "reference_direction": [
+          0,
+          0,
+          1
+        ],
+        "outer_diameter_m": 0.2
+      }
+    },
+    "shape": {
+      "mode": "curved",
+      "frame_x": [
+        0,
+        0,
+        1
+      ],
+      "local_center_m": [
+        0,
+        0,
+        0
+      ],
+      "body_outer_diameter_m": 0.22000000000000003,
+      "turn_radian": 2.6179938779914944,
+      "bend_scale_m": 0.4652623340102535,
+      "arc_radius_m": 0.11220000000000002
+    }
+  },
+  {
+    "ports": {
+      "side_a": {
+        "origin_m": [
+          1,
+          -2.1563038344773844,
+          1
+        ],
+        "axis": [
+          0,
+          -1,
+          0
+        ],
+        "reference_direction": [
+          0,
+          0,
+          1
+        ],
+        "outer_diameter_m": 0.2
+      },
+      "side_b": {
+        "origin_m": [
+          1,
+          -1.7704415231021393,
+          1.0060111999185324
+        ],
+        "axis": [
+          0,
+          0.9996573250157893,
+          0.026176946771470644
+        ],
+        "reference_direction": [
+          0,
+          -0.026176946771470633,
+          0.9996573250157893
+        ],
+        "outer_diameter_m": 0.1
+      }
+    },
+    "shape": {
+      "mode": "curved",
+      "frame_x": [
+        1,
+        0,
+        0
+      ],
+      "local_center_m": [
+        1,
+        -2,
+        1
+      ],
+      "body_outer_diameter_m": 0.22000000000000003,
+      "turn_radian": 0.02617993724298577,
+      "bend_scale_m": 0.04630383447738276,
+      "arc_radius_m": 3.1834354990910074
+    }
+  },
+  {
+    "ports": {
+      "side_a": {
+        "origin_m": [
+          -0.339375,
+          0,
+          0
+        ],
+        "axis": [
+          -1,
+          0,
+          0
+        ],
+        "reference_direction": [
+          0,
+          0,
+          1
+        ],
+        "outer_diameter_m": 0.3
+      },
+      "side_b": {
+        "origin_m": [
+          0,
+          0,
+          0
+        ],
+        "axis": [
+          1,
+          0,
+          0
+        ],
+        "reference_direction": [
+          0,
+          0,
+          1
+        ],
+        "outer_diameter_m": 0.05
+      }
+    },
+    "shape": {
+      "mode": "straight",
+      "frame_x": [
+        0,
+        0,
+        1
+      ]
+    }
+  },
+  {
+    "ports": {
+      "side_a": {
+        "origin_m": [
+          -0.5,
+          0,
+          0
+        ],
+        "axis": [
+          -1,
+          0,
+          0
+        ],
+        "reference_direction": [
+          0,
+          0,
+          1
+        ],
+        "outer_diameter_m": 0.3
+      },
+      "side_b": {
+        "origin_m": [
+          0.5,
+          0,
+          0
+        ],
+        "axis": [
+          1,
+          0,
+          0
+        ],
+        "reference_direction": [
+          0,
+          0,
+          1
+        ],
+        "outer_diameter_m": 0.05
+      }
+    },
+    "shape": {
+      "mode": "straight",
+      "frame_x": [
+        0,
+        0,
+        1
+      ]
+    }
+  },
+  {
+    "ports": {
+      "side_a": {
+        "origin_m": [
+          -0.8170198001790077,
+          0,
+          0
+        ],
+        "axis": [
+          -1,
+          0,
+          0
+        ],
+        "reference_direction": [
+          0,
+          0,
+          1
+        ],
+        "outer_diameter_m": 0.2
+      },
+      "side_b": {
+        "origin_m": [
+          -0.7677474772641908,
+          0.27943722915713354,
+          0
+        ],
+        "axis": [
+          -0.9396926207859083,
+          0.3420201433256689,
+          0
+        ],
+        "reference_direction": [
+          0,
+          0,
+          1
+        ],
+        "outer_diameter_m": 0.2
+      }
+    },
+    "shape": {
+      "mode": "curved",
+      "frame_x": [
+        0,
+        0,
+        1
+      ],
+      "local_center_m": [
+        0,
+        0,
+        0
+      ],
+      "body_outer_diameter_m": 0.22000000000000003,
+      "turn_radian": 2.792526803190927,
+      "bend_scale_m": 0.7070198001790077,
+      "arc_radius_m": 0.11220000000000002
+    }
+  }
+]

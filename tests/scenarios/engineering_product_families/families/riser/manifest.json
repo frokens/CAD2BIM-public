@@ -1,0 +1,18 @@
+{
+  "category": "RISER",
+  "family": {
+    "definition_path": "families/riser/definition.json",
+    "source_files": [{"repo_path": "families/riser/program/main.py", "bundle_path": "main.py"}],
+    "preview_cases_path": "families/riser/preview_cases.json",
+    "usage_path": "families/riser/usage.md"
+  },
+  "geometry_bindings": [{
+    "binding_key": "riser_body_geometry",
+    "resource_kind": "modeling_function",
+    "geometry_purpose": "product_component",
+    "source_files": [{"repo_path": "geometry/riser/main.py", "bundle_path": "main.py"}, {"repo_path": "geometry/riser/interfaces.py", "bundle_path": "interfaces.py"}, {"repo_path": "geometry/riser/parameters.py", "bundle_path": "parameters.py"}],
+    "parameter_schema_path": "geometry/riser/parameter_schema.json",
+    "validation_samples_path": "geometry/riser/validation_samples.json",
+    "usage_path": "geometry/riser/usage.md"
+  }]
+}

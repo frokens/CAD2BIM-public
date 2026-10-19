@@ -1,0 +1,405 @@
+{
+  "product_structure_kind": "single_product",
+  "standard_model": {},
+  "public_parameters": [],
+  "solved_parameters": [
+    {
+      "parameter_kind": "number_array",
+      "parameter_key": "local_center_m",
+      "length": 3,
+      "unit": "metre",
+      "minimum": -1.7976931348623157e+308,
+      "maximum": 1.7976931348623157e+308
+    },
+    {
+      "parameter_kind": "number",
+      "parameter_key": "chamber_radius_m",
+      "unit": "metre",
+      "minimum": 0,
+      "maximum": 1.7976931348623157e+308
+    },
+    {
+      "parameter_kind": "number",
+      "parameter_key": "chamber_wall_m",
+      "unit": "metre",
+      "minimum": 0,
+      "maximum": 1.7976931348623157e+308
+    },
+    {
+      "parameter_kind": "number",
+      "parameter_key": "seam_allowance_m",
+      "unit": "metre",
+      "minimum": 0,
+      "maximum": 1.7976931348623157e+308
+    },
+    {
+      "parameter_kind": "number_array",
+      "parameter_key": "side_a_local_port_m",
+      "length": 3,
+      "unit": "metre",
+      "minimum": -1.7976931348623157e+308,
+      "maximum": 1.7976931348623157e+308
+    },
+    {
+      "parameter_kind": "number_array",
+      "parameter_key": "side_a_outward_axis",
+      "length": 3,
+      "unit": "dimensionless",
+      "minimum": -1,
+      "maximum": 1
+    },
+    {
+      "parameter_kind": "number_array",
+      "parameter_key": "side_a_reference_axis",
+      "length": 3,
+      "unit": "dimensionless",
+      "minimum": -1,
+      "maximum": 1
+    },
+    {
+      "parameter_kind": "number",
+      "parameter_key": "side_a_wall_m",
+      "unit": "metre",
+      "minimum": 0,
+      "maximum": 1.7976931348623157e+308
+    },
+    {
+      "parameter_kind": "number_array",
+      "parameter_key": "side_b_local_port_m",
+      "length": 3,
+      "unit": "metre",
+      "minimum": -1.7976931348623157e+308,
+      "maximum": 1.7976931348623157e+308
+    },
+    {
+      "parameter_kind": "number_array",
+      "parameter_key": "side_b_outward_axis",
+      "length": 3,
+      "unit": "dimensionless",
+      "minimum": -1,
+      "maximum": 1
+    },
+    {
+      "parameter_kind": "number_array",
+      "parameter_key": "side_b_reference_axis",
+      "length": 3,
+      "unit": "dimensionless",
+      "minimum": -1,
+      "maximum": 1
+    },
+    {
+      "parameter_kind": "number",
+      "parameter_key": "side_b_wall_m",
+      "unit": "metre",
+      "minimum": 0,
+      "maximum": 1.7976931348623157e+308
+    },
+    {
+      "parameter_kind": "number_array",
+      "parameter_key": "side_c_local_port_m",
+      "length": 3,
+      "unit": "metre",
+      "minimum": -1.7976931348623157e+308,
+      "maximum": 1.7976931348623157e+308
+    },
+    {
+      "parameter_kind": "number_array",
+      "parameter_key": "side_c_outward_axis",
+      "length": 3,
+      "unit": "dimensionless",
+      "minimum": -1,
+      "maximum": 1
+    },
+    {
+      "parameter_kind": "number_array",
+      "parameter_key": "side_c_reference_axis",
+      "length": 3,
+      "unit": "dimensionless",
+      "minimum": -1,
+      "maximum": 1
+    },
+    {
+      "parameter_kind": "number",
+      "parameter_key": "side_c_wall_m",
+      "unit": "metre",
+      "minimum": 0,
+      "maximum": 1.7976931348623157e+308
+    },
+    {
+      "parameter_kind": "number_array",
+      "parameter_key": "side_d_local_port_m",
+      "length": 3,
+      "unit": "metre",
+      "minimum": -1.7976931348623157e+308,
+      "maximum": 1.7976931348623157e+308
+    },
+    {
+      "parameter_kind": "number_array",
+      "parameter_key": "side_d_outward_axis",
+      "length": 3,
+      "unit": "dimensionless",
+      "minimum": -1,
+      "maximum": 1
+    },
+    {
+      "parameter_kind": "number_array",
+      "parameter_key": "side_d_reference_axis",
+      "length": 3,
+      "unit": "dimensionless",
+      "minimum": -1,
+      "maximum": 1
+    },
+    {
+      "parameter_kind": "number",
+      "parameter_key": "side_d_wall_m",
+      "unit": "metre",
+      "minimum": 0,
+      "maximum": 1.7976931348623157e+308
+    },
+    {
+      "parameter_kind": "number",
+      "parameter_key": "side_a_outer_diameter_m",
+      "unit": "metre",
+      "minimum": 5e-324,
+      "maximum": 1.7976931348623157e+308
+    },
+    {
+      "parameter_kind": "number",
+      "parameter_key": "side_b_outer_diameter_m",
+      "unit": "metre",
+      "minimum": 5e-324,
+      "maximum": 1.7976931348623157e+308
+    },
+    {
+      "parameter_kind": "number",
+      "parameter_key": "side_c_outer_diameter_m",
+      "unit": "metre",
+      "minimum": 5e-324,
+      "maximum": 1.7976931348623157e+308
+    },
+    {
+      "parameter_kind": "number",
+      "parameter_key": "side_d_outer_diameter_m",
+      "unit": "metre",
+      "minimum": 5e-324,
+      "maximum": 1.7976931348623157e+308
+    }
+  ],
+  "components": [
+    {
+      "component_key": "cross",
+      "ifc_class": "IfcPipeFitting"
+    }
+  ],
+  "geometry_fragments": [
+    {
+      "fragment_key": "cross_body",
+      "local_transform_mode": "program",
+      "owner_component_key": "cross",
+      "binding_options": [
+        {
+          "binding_key": "cross_body_geometry",
+          "parameter_sources": {
+            "overrides": {
+              "side_a_outer_diameter_m": {
+                "source_kind": "solved_parameter",
+                "parameter_key": "side_a_outer_diameter_m"
+              },
+              "side_b_outer_diameter_m": {
+                "source_kind": "solved_parameter",
+                "parameter_key": "side_b_outer_diameter_m"
+              },
+              "side_c_outer_diameter_m": {
+                "source_kind": "solved_parameter",
+                "parameter_key": "side_c_outer_diameter_m"
+              },
+              "side_d_outer_diameter_m": {
+                "source_kind": "solved_parameter",
+                "parameter_key": "side_d_outer_diameter_m"
+              },
+              "local_center_m": {
+                "source_kind": "solved_parameter",
+                "parameter_key": "local_center_m"
+              },
+              "chamber_radius_m": {
+                "source_kind": "solved_parameter",
+                "parameter_key": "chamber_radius_m"
+              },
+              "chamber_wall_m": {
+                "source_kind": "solved_parameter",
+                "parameter_key": "chamber_wall_m"
+              },
+              "seam_allowance_m": {
+                "source_kind": "solved_parameter",
+                "parameter_key": "seam_allowance_m"
+              },
+              "side_a_local_port_m": {
+                "source_kind": "solved_parameter",
+                "parameter_key": "side_a_local_port_m"
+              },
+              "side_a_outward_axis": {
+                "source_kind": "solved_parameter",
+                "parameter_key": "side_a_outward_axis"
+              },
+              "side_a_reference_axis": {
+                "source_kind": "solved_parameter",
+                "parameter_key": "side_a_reference_axis"
+              },
+              "side_a_wall_m": {
+                "source_kind": "solved_parameter",
+                "parameter_key": "side_a_wall_m"
+              },
+              "side_b_local_port_m": {
+                "source_kind": "solved_parameter",
+                "parameter_key": "side_b_local_port_m"
+              },
+              "side_b_outward_axis": {
+                "source_kind": "solved_parameter",
+                "parameter_key": "side_b_outward_axis"
+              },
+              "side_b_reference_axis": {
+                "source_kind": "solved_parameter",
+                "parameter_key": "side_b_reference_axis"
+              },
+              "side_b_wall_m": {
+                "source_kind": "solved_parameter",
+                "parameter_key": "side_b_wall_m"
+              },
+              "side_c_local_port_m": {
+                "source_kind": "solved_parameter",
+                "parameter_key": "side_c_local_port_m"
+              },
+              "side_c_outward_axis": {
+                "source_kind": "solved_parameter",
+                "parameter_key": "side_c_outward_axis"
+              },
+              "side_c_reference_axis": {
+                "source_kind": "solved_parameter",
+                "parameter_key": "side_c_reference_axis"
+              },
+              "side_c_wall_m": {
+                "source_kind": "solved_parameter",
+                "parameter_key": "side_c_wall_m"
+              },
+              "side_d_local_port_m": {
+                "source_kind": "solved_parameter",
+                "parameter_key": "side_d_local_port_m"
+              },
+              "side_d_outward_axis": {
+                "source_kind": "solved_parameter",
+                "parameter_key": "side_d_outward_axis"
+              },
+              "side_d_reference_axis": {
+                "source_kind": "solved_parameter",
+                "parameter_key": "side_d_reference_axis"
+              },
+              "side_d_wall_m": {
+                "source_kind": "solved_parameter",
+                "parameter_key": "side_d_wall_m"
+              }
+            }
+          },
+          "uniform_scale_source": {
+            "source_kind": "fixed",
+            "value": 1
+          }
+        }
+      ]
+    }
+  ],
+  "interfaces": [
+    {
+      "interface_key": "side_a",
+      "owner_component_key": "cross",
+      "interface_kind": "external",
+      "source": {
+        "source_kind": "model_interface",
+        "fragment_key": "cross_body",
+        "model_interface_key": "side_a"
+      },
+      "external_constraint": {
+        "required": true,
+        "allowed_kinds": [
+          "finite_segment"
+        ],
+        "allowed_directions": [
+          "same"
+        ],
+        "roll_required": false,
+        "profile_required": true,
+        "maximum_position_tolerance_m": 1e-06,
+        "maximum_angular_tolerance_rad": 1e-06
+      }
+    },
+    {
+      "interface_key": "side_b",
+      "owner_component_key": "cross",
+      "interface_kind": "external",
+      "source": {
+        "source_kind": "model_interface",
+        "fragment_key": "cross_body",
+        "model_interface_key": "side_b"
+      },
+      "external_constraint": {
+        "required": true,
+        "allowed_kinds": [
+          "finite_segment"
+        ],
+        "allowed_directions": [
+          "same"
+        ],
+        "roll_required": false,
+        "profile_required": true,
+        "maximum_position_tolerance_m": 1e-06,
+        "maximum_angular_tolerance_rad": 1e-06
+      }
+    },
+    {
+      "interface_key": "side_c",
+      "owner_component_key": "cross",
+      "interface_kind": "external",
+      "source": {
+        "source_kind": "model_interface",
+        "fragment_key": "cross_body",
+        "model_interface_key": "side_c"
+      },
+      "external_constraint": {
+        "required": true,
+        "allowed_kinds": [
+          "finite_segment"
+        ],
+        "allowed_directions": [
+          "same"
+        ],
+        "roll_required": false,
+        "profile_required": true,
+        "maximum_position_tolerance_m": 1e-06,
+        "maximum_angular_tolerance_rad": 1e-06
+      }
+    },
+    {
+      "interface_key": "side_d",
+      "owner_component_key": "cross",
+      "interface_kind": "external",
+      "source": {
+        "source_kind": "model_interface",
+        "fragment_key": "cross_body",
+        "model_interface_key": "side_d"
+      },
+      "external_constraint": {
+        "required": true,
+        "allowed_kinds": [
+          "finite_segment"
+        ],
+        "allowed_directions": [
+          "same"
+        ],
+        "roll_required": false,
+        "profile_required": true,
+        "maximum_position_tolerance_m": 1e-06,
+        "maximum_angular_tolerance_rad": 1e-06
+      }
+    }
+  ],
+  "constraints": []
+}

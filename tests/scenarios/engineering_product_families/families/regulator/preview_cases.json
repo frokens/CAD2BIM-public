@@ -1,0 +1,633 @@
+{
+  "cases": {
+    "items": [
+      {
+        "case_kind": "family",
+        "case_key": "g1_original_scale",
+        "invocation": {
+          "realization_kind": "standard_model",
+          "product_origin": [
+            0,
+            0,
+            0
+          ],
+          "length_unit": {},
+          "public_parameters": {}
+        },
+        "expectation": {
+          "expected_status": "SOLVED"
+        }
+      },
+      {
+        "case_kind": "family",
+        "case_key": "g1_standard_nonzero_origin",
+        "invocation": {
+          "realization_kind": "standard_model",
+          "product_origin": [
+            2.5,
+            -3.0,
+            1.0
+          ],
+          "length_unit": {},
+          "public_parameters": {}
+        },
+        "expectation": {
+          "expected_status": "SOLVED"
+        }
+      },
+      {
+        "case_kind": "family",
+        "case_key": "g2_shifted_finite_window",
+        "invocation": {
+          "realization_kind": "self_geometry",
+          "product_origin": [
+            0,
+            0,
+            0
+          ],
+          "length_unit": {},
+          "public_parameters": {},
+          "external_constraints": [
+            {
+              "interface_key": "high_external",
+              "condition": {
+                "kind": "finite_segment",
+                "start_m": [
+                  0,
+                  0,
+                  0
+                ],
+                "end_m": [
+                  -2,
+                  0,
+                  0
+                ],
+                "outer_diameter_m": 0.15,
+                "direction_relation": "same"
+              }
+            },
+            {
+              "interface_key": "low_external",
+              "condition": {
+                "kind": "finite_segment",
+                "start_m": [
+                  0,
+                  0,
+                  0
+                ],
+                "end_m": [
+                  0.65,
+                  0,
+                  0
+                ],
+                "outer_diameter_m": 0.15,
+                "direction_relation": "same"
+              }
+            }
+          ]
+        },
+        "expectation": {
+          "expected_status": "SOLVED"
+        }
+      },
+      {
+        "case_kind": "family",
+        "case_key": "g3_scaled_detailed_after_original_miss",
+        "invocation": {
+          "realization_kind": "self_geometry",
+          "product_origin": [
+            0,
+            0,
+            0
+          ],
+          "length_unit": {},
+          "public_parameters": {
+            "node_stations": {
+              "kind": "confirmed",
+              "high_m": [
+                0,
+                0,
+                0
+              ],
+              "low_m": [
+                0,
+                0,
+                0
+              ]
+            }
+          },
+          "external_constraints": [
+            {
+              "interface_key": "high_external",
+              "condition": {
+                "kind": "finite_segment",
+                "start_m": [
+                  0,
+                  0,
+                  0
+                ],
+                "end_m": [
+                  -0.65,
+                  0,
+                  0
+                ],
+                "outer_diameter_m": 0.1,
+                "direction_relation": "same"
+              }
+            },
+            {
+              "interface_key": "low_external",
+              "condition": {
+                "kind": "finite_segment",
+                "start_m": [
+                  0,
+                  0,
+                  0
+                ],
+                "end_m": [
+                  0.65,
+                  0,
+                  0
+                ],
+                "outer_diameter_m": 0.1,
+                "direction_relation": "same"
+              }
+            }
+          ]
+        },
+        "expectation": {
+          "expected_status": "SOLVED"
+        }
+      },
+      {
+        "case_kind": "family",
+        "case_key": "g4_default_nominal_short_window",
+        "invocation": {
+          "realization_kind": "self_geometry",
+          "product_origin": [
+            0,
+            0,
+            0
+          ],
+          "length_unit": {},
+          "public_parameters": {
+            "node_stations": {
+              "kind": "confirmed",
+              "high_m": [
+                0,
+                0,
+                0
+              ],
+              "low_m": [
+                0,
+                0,
+                0
+              ]
+            }
+          },
+          "external_constraints": [
+            {
+              "interface_key": "high_external",
+              "condition": {
+                "kind": "finite_segment",
+                "start_m": [
+                  0,
+                  0,
+                  0
+                ],
+                "end_m": [
+                  -0.1,
+                  0,
+                  0
+                ],
+                "outer_diameter_m": 0.3,
+                "direction_relation": "same"
+              }
+            },
+            {
+              "interface_key": "low_external",
+              "condition": {
+                "kind": "finite_segment",
+                "start_m": [
+                  0,
+                  0,
+                  0
+                ],
+                "end_m": [
+                  0.1,
+                  0,
+                  0
+                ],
+                "outer_diameter_m": 0.3,
+                "direction_relation": "same"
+              }
+            }
+          ]
+        },
+        "expectation": {
+          "expected_status": "SOLVED"
+        }
+      },
+      {
+        "case_kind": "family",
+        "case_key": "rg_s1_parallel_offset_height",
+        "invocation": {
+          "realization_kind": "self_geometry",
+          "product_origin": [
+            0,
+            0,
+            0
+          ],
+          "length_unit": {},
+          "public_parameters": {},
+          "external_constraints": [
+            {
+              "interface_key": "high_external",
+              "condition": {
+                "kind": "finite_segment",
+                "start_m": [
+                  -1.2465223602644122,
+                  -0.15,
+                  0.9175
+                ],
+                "end_m": [
+                  -2.996522360264412,
+                  -0.15,
+                  0.9175
+                ],
+                "outer_diameter_m": 0.1,
+                "direction_relation": "same"
+              }
+            },
+            {
+              "interface_key": "low_external",
+              "condition": {
+                "kind": "finite_segment",
+                "start_m": [
+                  1.0135223602644121,
+                  0.15,
+                  1.1175
+                ],
+                "end_m": [
+                  2.763522360264412,
+                  0.15,
+                  1.1175
+                ],
+                "outer_diameter_m": 0.15,
+                "direction_relation": "same"
+              }
+            }
+          ]
+        },
+        "expectation": {
+          "expected_status": "SOLVED"
+        }
+      },
+      {
+        "case_kind": "family",
+        "case_key": "rg_s2_120_60_spatial",
+        "invocation": {
+          "realization_kind": "self_geometry",
+          "product_origin": [
+            2,
+            -3,
+            0.5
+          ],
+          "length_unit": {},
+          "public_parameters": {},
+          "external_constraints": [
+            {
+              "interface_key": "high_external",
+              "condition": {
+                "kind": "finite_segment",
+                "start_m": [
+                  -1.2968352222870552,
+                  0,
+                  1.0502500000000001
+                ],
+                "end_m": [
+                  -2.8123796789098225,
+                  0,
+                  1.9252500000000001
+                ],
+                "outer_diameter_m": 0.1,
+                "direction_relation": "same"
+              }
+            },
+            {
+              "interface_key": "low_external",
+              "condition": {
+                "kind": "finite_segment",
+                "start_m": [
+                  1.0829083577391285,
+                  0.06886606585880053,
+                  0.9012500000000001
+                ],
+                "end_m": [
+                  2.5070543001005325,
+                  0.5872127981293422,
+                  0.026250000000000107
+                ],
+                "outer_diameter_m": 0.15,
+                "direction_relation": "same"
+              }
+            }
+          ]
+        },
+        "expectation": {
+          "expected_status": "SOLVED"
+        }
+      },
+      {
+        "case_kind": "family",
+        "case_key": "rg_s3_mixed_straight_curved",
+        "invocation": {
+          "realization_kind": "self_geometry",
+          "product_origin": [
+            0,
+            0,
+            0
+          ],
+          "length_unit": {},
+          "public_parameters": {},
+          "external_constraints": [
+            {
+              "interface_key": "high_external",
+              "condition": {
+                "kind": "finite_segment",
+                "start_m": [
+                  -0.8937003968253989,
+                  0,
+                  1.4
+                ],
+                "end_m": [
+                  -0.8937003968253989,
+                  0,
+                  -0.35
+                ],
+                "outer_diameter_m": 0.1,
+                "direction_relation": "same"
+              }
+            },
+            {
+              "interface_key": "low_external",
+              "condition": {
+                "kind": "finite_segment",
+                "start_m": [
+                  1.1262003968253989,
+                  0,
+                  1.0175
+                ],
+                "end_m": [
+                  2.876200396825399,
+                  0,
+                  1.0175
+                ],
+                "outer_diameter_m": 0.15,
+                "direction_relation": "same"
+              }
+            }
+          ]
+        },
+        "expectation": {
+          "expected_status": "SOLVED"
+        }
+      },
+      {
+        "case_kind": "family",
+        "case_key": "rg_s3_double_straight",
+        "invocation": {
+          "realization_kind": "self_geometry",
+          "product_origin": [
+            0,
+            0,
+            0
+          ],
+          "length_unit": {},
+          "public_parameters": {},
+          "external_constraints": [
+            {
+              "interface_key": "high_external",
+              "condition": {
+                "kind": "finite_segment",
+                "start_m": [
+                  -0.8937003968253989,
+                  0,
+                  1.4
+                ],
+                "end_m": [
+                  -0.8937003968253989,
+                  0,
+                  -0.35
+                ],
+                "outer_diameter_m": 0.1,
+                "direction_relation": "same"
+              }
+            },
+            {
+              "interface_key": "low_external",
+              "condition": {
+                "kind": "finite_segment",
+                "start_m": [
+                  0.8937003968253989,
+                  0,
+                  1.35
+                ],
+                "end_m": [
+                  0.8937003968253989,
+                  0,
+                  -0.4
+                ],
+                "outer_diameter_m": 0.15,
+                "direction_relation": "same"
+              }
+            }
+          ]
+        },
+        "expectation": {
+          "expected_status": "SOLVED"
+        }
+      },
+      {
+        "case_kind": "family",
+        "case_key": "rg_s4_160_out_of_domain",
+        "invocation": {
+          "realization_kind": "self_geometry",
+          "product_origin": [
+            0,
+            0,
+            0
+          ],
+          "length_unit": {},
+          "public_parameters": {},
+          "external_constraints": [
+            {
+              "interface_key": "high_external",
+              "condition": {
+                "kind": "finite_segment",
+                "start_m": [
+                  0,
+                  0,
+                  0
+                ],
+                "end_m": [
+                  1.3680805733026755,
+                  0,
+                  3.7587704831436333
+                ],
+                "outer_diameter_m": 0.1,
+                "direction_relation": "same"
+              }
+            },
+            {
+              "interface_key": "low_external",
+              "condition": {
+                "kind": "finite_segment",
+                "start_m": [
+                  0,
+                  0,
+                  0
+                ],
+                "end_m": [
+                  4,
+                  0,
+                  0
+                ],
+                "outer_diameter_m": 0.15,
+                "direction_relation": "same"
+              }
+            }
+          ]
+        },
+        "expectation": {
+          "expected_status": "SOLVED"
+        }
+      },
+      {
+        "case_kind": "family",
+        "case_key": "rg_default_nominal_short_window",
+        "invocation": {
+          "realization_kind": "self_geometry",
+          "product_origin": [
+            0,
+            0,
+            0
+          ],
+          "length_unit": {},
+          "public_parameters": {
+            "node_stations": {
+              "kind": "confirmed",
+              "high_m": [
+                0,
+                0,
+                0
+              ],
+              "low_m": [
+                0,
+                0,
+                0
+              ]
+            }
+          },
+          "external_constraints": [
+            {
+              "interface_key": "high_external",
+              "condition": {
+                "kind": "finite_segment",
+                "start_m": [
+                  0,
+                  0,
+                  0
+                ],
+                "end_m": [
+                  -0.01,
+                  0,
+                  0
+                ],
+                "outer_diameter_m": 0.1,
+                "direction_relation": "same"
+              }
+            },
+            {
+              "interface_key": "low_external",
+              "condition": {
+                "kind": "finite_segment",
+                "start_m": [
+                  0,
+                  0,
+                  0
+                ],
+                "end_m": [
+                  0.01,
+                  0,
+                  0
+                ],
+                "outer_diameter_m": 0.1,
+                "direction_relation": "same"
+              }
+            }
+          ]
+        },
+        "expectation": {
+          "expected_status": "SOLVED"
+        }
+      },
+      {
+        "case_kind": "family",
+        "case_key": "rg_scaled_detailed_short_finite_windows",
+        "invocation": {
+          "realization_kind": "self_geometry",
+          "product_origin": [
+            0,
+            0,
+            0
+          ],
+          "length_unit": {},
+          "public_parameters": {},
+          "external_constraints": [
+            {
+              "interface_key": "high_external",
+              "condition": {
+                "kind": "finite_segment",
+                "start_m": [
+                  0,
+                  0,
+                  0
+                ],
+                "end_m": [
+                  -0.9,
+                  0,
+                  0
+                ],
+                "outer_diameter_m": 0.15,
+                "direction_relation": "same"
+              }
+            },
+            {
+              "interface_key": "low_external",
+              "condition": {
+                "kind": "finite_segment",
+                "start_m": [
+                  0,
+                  0,
+                  0
+                ],
+                "end_m": [
+                  0.9,
+                  0,
+                  0
+                ],
+                "outer_diameter_m": 0.15,
+                "direction_relation": "same"
+              }
+            }
+          ]
+        },
+        "expectation": {
+          "expected_status": "SOLVED"
+        }
+      }
+    ]
+  },
+  "nominal_scenario_key": "g1_original_scale"
+}

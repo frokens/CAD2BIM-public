@@ -1,0 +1,43 @@
+{
+  "contract": "geometry_runtime_persisted_preview_fixture_v1",
+  "fixtures": [
+    {
+      "file": "astra_host_display_context.brep",
+      "artifact_kind": "product_realization_display_context",
+      "content_type": "application/vnd.opencascade.brep",
+      "format": "occt_brep_v1",
+      "payload_sha256": "9448c505bb895cf304ba95b13d085f5befd372350b9b1c0d8a4acde4d418125c",
+      "size_bytes": 2711,
+      "source_evidence": {
+        "state_closure_sha256": "ffdaabaa22fb296a8cce1e240533e70c31fcbec13cee646bcb8ef5b68f9b4148",
+        "snapshot_sha256": "7d9246bf95c8fbb87be4f5f631ff5ee458e6b5330d5fb55ffea51308c9476349",
+        "preparation_evidence_sha256": "5225c939d1463780a9c12ecc9ece3b337bf57434e4ee607a9c902f7b9487e137"
+      },
+      "recipe_digest": "9f015e01d22ba54c71fb3de590d2dda8124161b6488896af1c704d15c3be1def",
+      "recipe_keys": [
+        "host:main_in_host",
+        "host:main_out_host"
+      ],
+      "literal_summary": {
+        "format": "occt_brep_v1",
+        "unit": "METRE",
+        "bounds": {
+          "minimum_m": [-0.5, -0.03, -0.03],
+          "maximum_m": [0.5, 0.03, 0.03]
+        },
+        "topology": {
+          "vertex_count": 4,
+          "edge_count": 6,
+          "wire_count": 6,
+          "face_count": 6,
+          "shell_count": 2,
+          "solid_count": 2,
+          "triangle_count": 1000,
+          "boundary_edge_count": 0
+        },
+        "surface_area_m2": 0.086707957239,
+        "volume_m3": 0.001130973355
+      }
+    }
+  ]
+}

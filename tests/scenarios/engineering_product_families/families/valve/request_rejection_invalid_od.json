@@ -1,0 +1,63 @@
+{
+  "scope": "request_layer_negative_only_not_a_publication_validation_scenario",
+  "basis_case": "v3_wide_reducer",
+  "change": {
+    "interface_key": "side_a",
+    "condition": {
+      "outer_diameter_m": -0.3
+    }
+  },
+  "expected_result": "ProductRealizationRequest rejects the finite_segment outer_diameter_m before Family Program or Geometry build",
+  "degenerate_segment_case": {
+    "case_key": "degenerate_axis",
+    "invocation": {
+      "realization_kind": "self_geometry",
+      "product_origin": [
+        0,
+        0,
+        0
+      ],
+      "length_unit": {},
+      "public_parameters": {},
+      "external_constraints": [
+        {
+          "interface_key": "side_a",
+          "condition": {
+            "kind": "finite_segment",
+            "start_m": [
+              0,
+              0,
+              0
+            ],
+            "end_m": [
+              0,
+              0,
+              0
+            ],
+            "outer_diameter_m": 0.3,
+            "direction_relation": "same"
+          }
+        },
+        {
+          "interface_key": "side_b",
+          "condition": {
+            "kind": "finite_segment",
+            "start_m": [
+              0,
+              0,
+              0
+            ],
+            "end_m": [
+              2.0000000000000004,
+              3.4641016151377544,
+              0
+            ],
+            "outer_diameter_m": 0.2,
+            "direction_relation": "same"
+          }
+        }
+      ]
+    },
+    "expected_result": "ProductRealizationInvocation rejects the finite_segment with coincident endpoints before Family Program or Geometry build"
+  }
+}

@@ -1,0 +1,4 @@
+[
+  {"host_outer_diameter_m": 0.2, "branch_outer_diameter_m": 0.063, "branch_local_direction": [0, 0, 1], "branch_local_reference_axis": [1, 0, 0], "shape": {"mode": "detailed", "collar_half_length_m": 0.15, "branch_port_station_m": 0.226}},
+  {"host_outer_diameter_m": 0.2, "branch_outer_diameter_m": 0.063, "branch_local_direction": [0.5, 0, 0.8660254037844386], "branch_local_reference_axis": [-0.8660254037844386, 0, 0.5], "shape": {"mode": "detailed", "collar_half_length_m": 0.15, "branch_port_station_m": 0.26096232167371086}}
+]

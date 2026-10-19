@@ -1,0 +1,69 @@
+name: cad2bim
+
+x-cad2bim-service: &cad2bim-service
+  # CadQuery 2.8 currently has no nlopt >=2.9 wheel for Linux ARM64.
+  platform: ${CAD2BIM_DOCKER_PLATFORM:-linux/amd64}
+  build:
+    context: ..
+    dockerfile: deploy/Dockerfile
+  image: cad2bim-backend:${CAD2BIM_IMAGE_TAG:-local}
+  restart: unless-stopped
+  init: true
+  secrets:
+    - source: cad2bim_env
+      target: cad2bim.env
+  environment: &cad2bim-environment
+    CAD2BIM_ENV: production
+    CAD2BIM_ENV_FILE: /run/secrets/cad2bim.env
+    CAD2BIM_STORAGE_ROOT: /var/lib/cad2bim
+  volumes:
+    - cad2bim_storage:/var/lib/cad2bim
+  networks:
+    - control
+
+services:
+  postgres:
+    image: postgres:16-alpine
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: cad2bim
+      POSTGRES_USER: cad2bim
+      POSTGRES_PASSWORD: ${CAD2BIM_POSTGRES_PASSWORD:?set CAD2BIM_POSTGRES_PASSWORD}
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U cad2bim -d cad2bim"]
+      interval: 5s
+      timeout: 5s
+      retries: 20
+    networks:
+      - control
+
+  migrate:
+    <<: *cad2bim-service
+    restart: "no"
+    command:
+      - /bin/sh
+      - -ec
+      - alembic upgrade head && cad2bim-checkpointer-setup && cad2bim-db-runtime-roles
+    environment:
+      <<: *cad2bim-environment
+      CAD2BIM_DATABASE_URL: postgresql+psycopg://cad2bim:${CAD2BIM_POSTGRES_PASSWORD:?set CAD2BIM_POSTGRES_PASSWORD}@postgres:5432/cad2bim
+      CAD2BIM_API_POSTGRES_PASSWORD: ${CAD2BIM_API_POSTGRES_PASSWORD:?set CAD2BIM_API_POSTGRES_PASSWORD}
+      CAD2BIM_RUNNER_POSTGRES_PASSWORD: ${CAD2BIM_RUNNER_POSTGRES_PASSWORD:?set CAD2BIM_RUNNER_POSTGRES_PASSWORD}
+      CAD2BIM_MCP_POSTGRES_PASSWORD: ${CAD2BIM_MCP_POSTGRES_PASSWORD:?set CAD2BIM_MCP_POSTGRES_PASSWORD}
+    depends_on:
+      postgres:
+        condition: service_healthy
+
+volumes:
+  postgres_data:
+  cad2bim_storage:
+
+networks:
+  control:
+    internal: false
+
+secrets:
+  cad2bim_env:
+    file: ${CAD2BIM_ENV_FILE:?set CAD2BIM_ENV_FILE}

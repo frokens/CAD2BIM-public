@@ -1,0 +1,6 @@
+# OCCT regression fixtures are immutable serialized bytes, including whitespace.
+tests/fixtures/geometry_runtime/**/*.brep binary
+
+# Reviewed standalone geometry fixtures are data, not line-oriented source.
+*.brep binary
+*.dxf binary

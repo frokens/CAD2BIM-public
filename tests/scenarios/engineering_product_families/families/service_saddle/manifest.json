@@ -1,0 +1,44 @@
+{
+  "category": "SERVICE_SADDLE",
+  "family": {
+    "definition_path": "families/service_saddle/definition.json",
+    "source_files": [
+      {
+        "repo_path": "families/service_saddle/program/main.py",
+        "bundle_path": "main.py"
+      }
+    ],
+    "preview_cases_path": "families/service_saddle/preview_cases.json",
+    "usage_path": "families/service_saddle/usage.md"
+  },
+  "geometry_bindings": [
+    {
+      "binding_key": "service_saddle_geometry",
+      "resource_kind": "modeling_function",
+      "geometry_purpose": "product_component",
+      "source_files": [
+        {
+          "repo_path": "geometry/service_saddle/main.py",
+          "bundle_path": "main.py"
+        }, {"repo_path": "geometry/service_saddle/interfaces.py", "bundle_path": "interfaces.py"}, {"repo_path": "geometry/service_saddle/parameters.py", "bundle_path": "parameters.py"}
+      ],
+      "parameter_schema_path": "geometry/service_saddle/parameter_schema.json",
+      "validation_samples_path": "geometry/service_saddle/validation_samples.json",
+      "usage_path": "geometry/service_saddle/usage.md"
+    },
+    {
+      "binding_key": "sphere_geometry",
+      "resource_kind": "modeling_function",
+      "geometry_purpose": "product_component",
+      "source_files": [
+        {
+          "repo_path": "geometry/connection_sphere/main.py",
+          "bundle_path": "main.py"
+        }, {"repo_path": "geometry/connection_sphere/interfaces.py", "bundle_path": "interfaces.py"}
+      ],
+      "parameter_schema_path": "geometry/connection_sphere/parameter_schema.json",
+      "validation_samples_path": "geometry/connection_sphere/validation_samples.json",
+      "usage_path": "geometry/connection_sphere/usage.md"
+    }
+  ]
+}
